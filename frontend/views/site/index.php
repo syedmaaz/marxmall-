@@ -1,0 +1,347 @@
+<?php
+use yii\helpers\Html;
+use yii\bootstrap\ActiveForm;
+?>
+    <div class="page">
+        <header>
+            <div class="wrapper">
+                <div class="logo"> <img src="images/t1/home-logo.png" /></div>
+                <div class="social-media">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li>
+                            <div id="wrap">
+                                <form action="" autocomplete="on">
+                                    <input id="search" name="search" type="text" placeholder="Search">
+                                    <input id="search_submit" value="Rechercher" type="submit">
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="support">
+                    <ul>
+                        <li><a href="#">LIVE CHAT</a></li>
+                        <li><a href="<?= Yii::$app->urlManager->createUrl(['site/register-store']) ?>">BUY A SHOP</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="arrow" style="display:none">
+                <a class="navigat-btn" href="#shop-catogories"><img src="images/t1/arrow.png" /></a>
+            </div>
+            <div class="tabs-menu" style="display:none;">
+                <ul>
+                    <li class="tab-1"><a href="#home">Home<span><img src="images/t1/home-icon.png"/></span></a></li>
+                    <li class="tab-2"><a href="#about-us">About Us<span><img src="images/t1/information-icon.png"/></span></a></li>
+                    <li class="tab-3"><a href="#testimonials">Testimonials<span><img src="images/t1/pencil.png"/></span></a></li>
+                    <li class="tab-5"><a href="#terms-condition">Terms &amp; conditions<span><img src="images/t1/hand-shake.png"/></span></a></li>
+                    <li class="tab-6"><a href="#privacy-policy">Privacy Policy<span><img src="images/t1/lock.png"/></span></a></li>
+                    <li class="tab-8"><a href="#blog">Blog<span><img src="images/t1/note.png"/></span></a></li>
+                </ul>
+            </div>
+            <div class="tab">
+                <div class="wrapper">
+                    <div id="home" class="tab-content" style="margin: 192px auto 0">
+                        <div class="under-cons">
+                            <main>
+                                <p>Welcome To</p>
+                                <a href="#" class="bounceInDown">
+                                    <img src="images/t1/logo.png" alt="Logo" />
+                                </a>
+                                <h4>First Time online Shopping Mall</h4>
+                                <a href="#promotions" class="pulse btn navigat-btn">
+                                click to enter <span><i class="fa fa-angle-right"></i></span>
+                            </a>
+                            </main>
+                        </div>
+                    </div>
+                    <div id="promotions" class="tab-content">
+                        <div class="slider-wrapper">
+                            <div id="slider">
+                                <div class="slide1">
+                                    <div class="banner-1"> <img src="images/t1/banner-1.png" /> </div>
+                                    <div class="banner-2"> <img src="images/t1/banner-2.png" /> </div>
+                                    <div class="banner-3"> <img src="images/t1/banner-3.png" /> </div>
+                                    <div class="banner-4"> <img src="images/t1/banner-4.png" /> </div>
+                                </div>
+                                <div class="slide2">
+                                    <div class="banner-1"> <img src="images/t1/banner-1.png" /> </div>
+                                    <div class="banner-2"> <img src="images/t1/banner-2-2.png" /> </div>
+                                    <div class="banner-3"> <img src="images/t1/banner-6.jpg" /> </div>
+                                    <div class="banner-4"> <img src="images/t1/banner-7.jpg" /> </div>
+                                </div>
+                                <div class="slide3">
+                                    <div class="banner-1"> <img src="images/t1/banner-1.png" /> </div>
+                                    <div class="banner-2"> <img src="images/t1/banner-2.png" /> </div>
+                                    <div class="banner-3"> <img src="images/t1/banner-3.png" /> </div>
+                                    <div class="banner-4"> <img src="images/t1/banner-4.png" /> </div>
+                                </div>
+                                <div class="slide4">
+                                    <div class="banner-1"> <img src="images/t1/banner-1.png" /> </div>
+                                    <div class="banner-2"> <img src="images/t1/banner-2.png" /> </div>
+                                    <div class="banner-3"> <img src="images/t1/banner-3.png" /> </div>
+                                    <div class="banner-4"> <img src="images/t1/banner-4.png" /> </div>
+                                </div>
+                            </div>
+                            <div id="slider-direction-nav"></div>
+                            <div id="slider-control-nav"></div>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                    $(document).ready(function() {
+                        var slider = $('#slider').leanSlider({
+                            directionNav: '#slider-direction-nav',
+                            controlNav: '#slider-control-nav'
+                        });
+                    });
+                    </script>
+                    <div id="garments" class="tab-content">
+                        <div class="garments" id="garments-slide">
+                            <div class="garments-tp-bar">
+                                <h3>GARMENTS</h3>
+                            </div>
+                            <div class="garments-catog">
+                                <ul class="garments-list group">
+                                    <?php
+                                    foreach ($stores as $key => $store_chunk): 
+                                       foreach ($store_chunk as $store):  ?>
+                                        <li>
+                                            <a href="<?= Yii::$app->urlManager->createUrl(['home/index', 'id' => $store->store_id ]) ?>" class="span2">
+                                            <img style="height: 148px;" src="<?= Yii::$app->urlManager->getBaseUrl() . '/uploads' . $store->store_picture ?>"/>
+                                        </a>
+                                        </li>
+                                        <?php endforeach; 
+                                      endforeach; ?>
+                                </ul>
+                            </div>
+                            <!-- <div class="pagination">
+    <ul>
+        <li><a>INDEX</a></li>
+        <li><a href="#">A</a></li>
+        <li><a href="#">B</a></li>
+        <li><a href="#">C</a></li>
+        <li><a href="#">D</a></li>
+        <li><a href="#">E</a></li>
+        <li><a href="#">F</a></li>
+        <li><a href="#">G</a></li>
+        <li><a href="#">H</a></li>
+        <li><a href="#">I</a></li>
+        <li><a href="#">J</a></li>
+        <li><a href="#">K</a></li>
+        <li><a href="#">L</a></li>
+        <li><a href="#">M</a></li>
+        <li><a href="#">N</a></li>
+        <li><a href="#">O</a></li>
+        <li><a href="#">P</a></li>
+        <li><a href="#">Q</a></li>
+        <li><a href="#">R</a></li>
+        <li><a href="#">S</a></li>
+        <li><a href="#">T</a></li>
+        <li><a href="#">U</a></li>
+        <li><a href="#">V</a></li>
+        <li><a href="#">W</a></li>
+        <li><a href="#">X</a></li>
+        <li><a href="#">Y</a></li>
+        <li><a href="#">Z</a></li>
+    </ul>
+</div>
+ -->
+                        </div>
+                    </div>
+                    <div id="shop-catogories" class="tab-content">
+                        <div class="garments">
+                            <div class="garments-tp-bar">
+                                <h3>SHOP CATOGORIES:</h3>
+                            </div>
+                            <div class="garments-catog">
+                                <ul class="garments-list group">
+                                    <?php
+                                    foreach ($categories as $key => $cat_chunk):
+                                       foreach ($cat_chunk as $cat):  ?>
+                                        <li>
+                                            <a href="#garments" class="span2 navigat-btn">
+                                            <img style="height: 148px;" src="<?= Yii::$app->urlManager->getBaseUrl() . '/uploads' .  $cat->cat_pic ?>"/>
+                                        </a>
+                                        </li>
+                                        <?php endforeach; ?>
+                                            <?php endforeach; ?>
+                                </ul>
+                            </div>
+                            <!--   <div class="pagination">
+                            <ul>
+                                <li><a>INDEX</a></li>
+                                <li><a href="#">A</a></li>
+                                <li><a href="#">B</a></li>
+                                <li><a href="#">C</a></li>
+                                <li><a href="#">D</a></li>
+                                <li><a href="#">E</a></li>
+                                <li><a href="#">F</a></li>
+                                <li><a href="#">G</a></li>
+                                <li><a href="#">H</a></li>
+                                <li><a href="#">I</a></li>
+                                <li><a href="#">J</a></li>
+                                <li><a href="#">K</a></li>
+                                <li><a href="#">L</a></li>
+                                <li><a href="#">M</a></li>
+                                <li><a href="#">N</a></li>
+                                <li><a href="#">O</a></li>
+                                <li><a href="#">P</a></li>
+                                <li><a href="#">Q</a></li>
+                                <li><a href="#">R</a></li>
+                                <li><a href="#">S</a></li>
+                                <li><a href="#">T</a></li>
+                                <li><a href="#">U</a></li>
+                                <li><a href="#">V</a></li>
+                                <li><a href="#">W</a></li>
+                                <li><a href="#">X</a></li>
+                                <li><a href="#">Y</a></li>
+                                <li><a href="#">Z</a></li>
+                            </ul>
+                        </div> -->
+                        </div>
+                    </div>
+                    <!-- <div id="register-shop" class="tab-content">
+                    <div class="garments" id="garments-slide">
+                        <div class="col-lg-12">
+                            <?php $form = ActiveForm::begin(['id' => 'form-signup', 'options' => ['enctype' => 'multipart/form-data']]); ?>
+                                <?php if(\Yii::$app->user->isGuest): ?>
+                                    <?= $form->field($userModel, 'username') ?>
+                                    <?= $form->field($userModel, 'email') ?>
+                                    <?= $form->field($userModel, 'password')->passwordInput() ?>
+                                <?php endif;?>
+                                <?= $form->field($storeModel, 'store_name')->textInput(['maxlength' => 100]) ?>
+                                <?= $form->field($storeModel, 'store_desc')->textarea(['rows' => 6]) ?>
+                                <?= $form->field($storeModel, 'file')->fileInput() ?>
+                                <div class="form-group">
+                                    <?= Html::submitButton('Signup', ['class' => 'btn btn-primary', 'name' => 'signup-button']) ?>
+                                </div>
+                                <?php ActiveForm::end(); ?>
+                        </div>
+                    </div>
+                </div> -->
+                    <div id="about-us" class="tab-content">
+                        <div class="about-us">
+                            <div class="about-tp-bar">
+                                <h3>ABOUT US</h3>
+                            </div>
+                            <div class="about-us-main">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div id="testimonials" class="tab-content">
+                    <div class="testimonials">
+                        <div class="testimonials-tp-bar">
+                            <h3>Testimonials</h3>
+                        </div>
+                        <div class="testimonials-main">
+                            <div class="wrapper-2">
+                                 <?php 
+                                 foreach ($testimonials as $key => $testi): ?>
+                                <div class="testimonials-1">
+                                    <div class="testimonials-a"> <img src="<?php echo Yii::$app->urlManager->getBaseUrl() . '/uploads/testimonial/' .$testi->image;?>" /> </div>
+                                    <div class="testimonials-b">
+                                    <?php echo $testi->comment;?>
+                                    </div>
+                                </div>
+                                <?php endforeach;?>                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div id="blog" class="tab-content">
+                        <div class="blog">
+                            <div class="blog-tp-bar">
+                                <h3>Blogs</h3>
+                            </div>
+                            <div class="blog-main">
+                                <div class="wrapper-2">
+                                    <?php foreach ($blogs as $key => $b):  ?>
+                                        <div class="blogs-1">
+                                            <div class="blog-a">
+                                                <ul>
+                                                    <li>
+                                                        <p>
+                                                            <?php echo date("M", strtotime($b->created_at)); ?>
+                                                        </p>
+                                                    </li>
+                                                    <li><span><?php echo date("d", strtotime($b->created_at)); ?></span></li>
+                                                </ul>
+                                            </div>
+                                            <div class="blog-b">
+                                                <?php echo $b->title;?>
+                                                    <h5>Posted by <span>Admin</span></h5>
+                                                    <?php echo $b->content;?>
+                                                        <ul>
+                                                            <li><a href="#">Read more</a></li>
+                                                            <!--   <li><a href="#">No comments</a></li> -->
+                                                        </ul>
+                                            </div>
+                                            <div class="blog-img"> <img src="<?php echo Yii::$app->urlManager->getBaseUrl() . '/uploads/blog/' .$b->image_url;?>" /> </div>
+                                        </div>
+                                        <?php endforeach;?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="privacy-policy" class="tab-content">
+                        <div class="privacy-policy">
+                            <div class="privacy-policy-tp-bar">
+                                <h3><?php echo $pp->cms_name ?></h3>
+                            </div>
+                            <div class="privacy-policy-main">
+                                <div class="wrapper-2">
+                                    <div class="privacy-policy-list">
+                                       <?php echo $pp->cms_content; ?>                              
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="terms-condition" class="tab-content">
+                        <div class="terms-condition">
+                            <div class="terms-condition-tp-bar">
+                                <h3><?php echo $tc->cms_name ?></h3>
+                            </div>
+                            <div class="terms-condition-main">
+                                <div class="wrapper-2">
+                                    <div class="terms-condition-list">
+                                                <?php echo $tc->cms_content; ?>                             
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="brands-slider" style="display:none;">
+            <div class="internal-navbar">
+                <div class="panel-body">
+                    <ul class="tiles">
+                        <li class="tile"> <img src="images/t1/lasenza.png" /> </li>
+                        <li class="tile"> <img src="images/t1/canon.png" /> </li>
+                        <li class="tile"> <img src="images/t1/puma.png" /> </li>
+                        <li class="tile"> <img src="images/t1/sony.png" /> </li>
+                        <li class="tile"> <img src="images/t1/nike.png" /> </li>
+                        <li class="tile"> <img src="images/t1/dg.png" /> </li>
+                        <li class="tile"> <img src="images/t1/levisb.png" /> </li>
+                        <li class="tile"> <img src="images/t1/fender.png" /> </li>
+                        <li class="tile"> <img src="images/t1/rayban.png" /> </li>
+                        <li class="tile"> <img src="images/t1/br.png" /> </li>
+                        <li class="tile"> <img src="images/t1/levisb.png" /> </li>
+                        <li class="tile"> <img src="images/t1/fender.png" /> </li>
+                        <li class="tile"> <img src="images/t1/rayban.png" /> </li>
+                    </ul>
+                </div>
+                <span class="button left hide" id="page-left"></span> <span class="button right" id="page-right"></span> </div>
+            <p>All Rights Reserved By Marx Mall</p>
+        </div>
+    </div>

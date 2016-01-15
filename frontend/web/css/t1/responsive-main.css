@@ -1,0 +1,383 @@
+@media screen and (max-width: 1024px) {
+.wrapper {
+    width: 1025px;
+}
+.support ul li a {
+    font-size: 12px;
+}	
+.tab-content {
+    width: 982px;
+
+}
+.slider-wrapper {
+    width: 88%;
+    right: -60px;
+}
+.tab-content {
+
+    margin: 51px auto 0px;
+}
+.logo {
+    width: 100%;
+}
+.logo img {
+    margin: 0px 0px 0px 41%;
+}
+
+input[type="text"] {
+
+    top: -11px;
+    right: 45px;
+
+}
+.social-media {
+    width: 58.8%;
+    float: left;
+    margin: 0px 0px 0px 39%;
+}
+input[type="submit"] {
+
+    top: 13px;
+    right: 0;
+
+}
+.support {
+    width: 100%;
+    float: left;
+}
+.support ul {
+    text-align: center;
+}
+.tabs-menu {
+    top: 159px;
+}
+.about-us {
+    width: 85%;
+    height: 400px;
+    min-height: 437px;
+    position: relative;
+    left: 111px;
+}
+.testimonials-main {
+    height: 365px;
+}
+.testimonials {
+    width: 85%;
+    float: left;
+    background-color: rgba(0, 0, 0, 0.57);
+     height: 400px;
+    min-height: 437px;
+	    position: relative;
+    left: 111px;
+}
+.garments {
+    width: 85%;
+    float: left;
+    background-color: rgba(0, 0, 0, 0.57);
+     height: 400px;
+    min-height: 437px;
+    left: 111px;
+    position: relative;
+}
+.garments-tp-bar {
+    padding: 4px 0px;
+}
+.garments-catog ul {
+    margin: 0px 71px;
+}
+.terms-condition {
+    width: 85%;
+    float: left;
+     height: 400px;
+    min-height: 437px;
+	    position: relative;
+    left: 111px;
+}
+.wrapper-2 {
+    width: 725px;
+}
+.terms-condition ol li {
+    padding-top: 11px;
+}
+.terms-condition ol li p {
+    font-size: 11px;
+}
+.terms-condition ol {
+    padding-top: 0px;
+}
+
+.privacy-policy {
+    width: 85%;
+    float: left;
+     height: 400px;
+    min-height: 437px;
+	    position: relative;
+    left: 111px;
+}
+.privacy-policy ol {
+    padding-top: 0px;
+}
+.privacy-policy ol li {
+    padding-top: 11px;
+}
+.privacy-policy ol li p {
+    font-size: 11px;
+}
+.blog {
+    width: 85%;
+    float: left;
+     height: 400px;
+    min-height: 437px;
+	    position: relative;
+    left: 111px;
+}
+.blog h5 {
+    padding: 0px 9px 0px 19px;
+    line-height: 25px;
+}
+.blog p {
+    font-size: 11px;
+}
+.blog h4 {
+    font-size: 12px;
+}
+.blog-main {
+    height: 376px;
+}
+.brands-slider {
+    width: 100%;
+    float: left;
+    margin: 6px 0px;
+    position: fixed;
+    bottom: 0;
+}
+
+}
+@media screen and (max-width: 667px) {
+.wrapper {
+    width: 640px;
+}
+.wrapper-2 {
+    width: 246px;
+}
+#wrap {
+    top: -14px;
+    left: -242px;
+}
+.support {
+    width: 53%;
+    float: left;
+}
+.support ul li a {
+    font-size: 8px;
+    padding: 8px;
+}
+.tab-content {
+    width: 651px;
+}
+.arrow {
+    width: 34%;
+}
+.slider-wrapper {
+    width: 38%;
+    right: -48px;
+    top: -5px;
+}
+.arrow {
+    margin-top: 20%;
+    width: 17%;
+}
+.logo {
+    width: 66%;
+}
+.social-media {
+    margin: 0px 0px 0px 15%;
+}
+.arrow {
+    margin-top: 49px;
+}
+.logo img {
+    margin: 0px 0px 0px 28%;
+    width: 100px;
+}
+.social-media {
+    width: 58.8%;
+    float: left;
+    margin: 0px 0px 0px 10%;
+}
+.tabs-menu ul li {
+    list-style: none;
+    padding-bottom: 15px;
+}
+.tabs-menu {
+    top: 144px;
+}
+
+.about-us {
+    width: 46%;
+    height: 178px;
+    min-height: 308px;
+    left: 58px;
+    top: -40px;
+    overflow: auto;
+}
+.testimonials {
+   width: 46%;
+    height: 178px;
+    min-height: 308px;
+    left: 58px;
+    top: -40px;
+    overflow: auto;
+}
+.testimonials-a {
+    width: 12%;
+    float: left;
+    margin-top: 7px;
+}.testimonials p {
+    width: 91%;
+}
+.tabs-menu {
+    top: 137px;
+}
+.testimonials-main {
+
+    overflow: initial;
+}
+.testimonials-a img {
+    width: 100%;
+    margin-top: 29px;
+}
+.testimonials p {
+    width: 91%;
+}
+.testimonials-b {
+    width: 66%;
+    float: left;
+}
+.garments{
+   width: 46%;
+    height: 178px;
+    min-height: 308px;
+    left: 58px;
+    top: -40px;
+    overflow: auto;
+}
+.terms-condition{
+   width: 46%;
+    height: 178px;
+    min-height: 308px;
+    left: 58px;
+    top: -40px;
+    overflow: auto;
+}
+.privacy-policy{
+   width: 46%;
+    height: 178px;
+    min-height: 308px;
+    left: 58px;
+    top: -40px;
+    overflow: auto;
+}
+.blog{
+   width: 46%;
+    height: 178px;
+    min-height: 308px;
+    left: 58px;
+    top: -40px;
+    overflow: auto;
+}
+.blog-main img {
+    width: 55px;
+}
+.blog-a {
+    width: 96%;
+
+}
+.blog-main {
+  
+ overflow:initial;
+
+}
+}
+@media screen and (max-width: 568px) {
+.arrow {
+    margin-top: 232px;
+}
+.about-us {
+    width: 39%;
+    height: 178px;
+    min-height: 308px;
+    left: 58px;
+    top: -40px;
+    overflow: auto;
+}
+.testimonials {
+    width: 39%;
+    height: 178px;
+    min-height: 308px;
+    left: 58px;
+    top: -40px;
+    overflow: auto;
+}
+.testimonials-a {
+    width: 21%;
+}
+.wrapper-2 {
+    width: 191px;
+
+}
+.garments {
+    width: 39%;
+    height: 178px;
+    min-height: 308px;
+    left: 58px;
+    top: -40px;
+    overflow: auto;
+}
+.terms-condition {
+    width: 39%;
+    height: 178px;
+    min-height: 308px;
+    left: 58px;
+    top: -40px;
+    overflow: auto;
+}
+.privacy-policy {
+    width: 39%;
+    height: 178px;
+    min-height: 308px;
+    left: 58px;
+    top: -40px;
+    overflow: auto;
+}
+.garments {
+  width: 39%;
+    height: 178px;
+    min-height: 308px;
+    left: 58px;
+    top: -40px;
+    overflow: auto;
+}
+.blog {
+ width: 39%;
+    height: 178px;
+    min-height: 308px;
+    left: 58px;
+    top: -40px;
+    overflow: auto;
+}
+.blog-main img {
+    width: 55px;
+    margin: 14px 0px 0px 27px;
+}
+.blog-img {
+    float: left;
+    width: 100%;
+}
+.blog p {
+    width: 100%;
+}
+.garments-catog ul {
+    margin: 0px 44px;
+}
+}

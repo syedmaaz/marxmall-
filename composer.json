@@ -1,0 +1,23 @@
+{
+    "name": "localhost/maxmall",
+    "description": "maxmall online shopping mall",
+    "license": "Syed Maaz",
+    "authors": [
+        {
+            "name": "Syed Maaz",
+            "email": "syed_maaz@hotmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require-dev": {
+        "yiisoft/yii2-debug": "*",
+        "yiisoft/yii2-gii": "*"
+    },
+    "require": {
+        "dmstr/yii2-adminlte-asset": "*",
+        "2amigos/yii2-file-upload-widget": "*",
+        "kartik-v/yii2-widget-fileinput": "*",
+        "paypal/rest-api-sdk-php": "*",
+        "yiidoc/yii2-redactor": "*"
+    }
+}
