@@ -119,6 +119,7 @@ use yii\bootstrap\Nav;
                             Search
                         </a>
                     </li>
+
                 </ul>
             </li>
             <li class="treeview">
@@ -214,6 +215,13 @@ use yii\bootstrap\Nav;
                 <a href="<?= Yii::$app->urlManager->createUrl('blog') ?>">
                     <i class="fa fa-user"></i>
                     <span>Blogs</span>
+                    <small class="badge pull-right bg-red"></small>
+                </a>
+            </li>
+            <li class="treeview">
+                <a href="<?= Yii::$app->urlManager->createUrl('slider-management') ?>">
+                    <i class="fa fa-user"></i>
+                    <span>Slider Management</span>
                     <small class="badge pull-right bg-red"></small>
                 </a>
             </li>

@@ -11,6 +11,7 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use yii\web\UploadedFile;
+use yii\db\Query;
 
 /**
  * ProductController implements the CRUD actions for Product model.
@@ -181,6 +182,10 @@ class ProductController extends Controller
      */
     public function actionDelete($id)
     {
+        // $connection = new Query();
+       Yii::$app->db->createCommand('DELETE FROM prod_cat WHERE prod_id='.$id)
+            ->execute();
+
         $this->findModel($id)->delete();
 
         return $this->redirect(['index']);
