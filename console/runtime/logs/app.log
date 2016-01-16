@@ -1,0 +1,891 @@
+2015-02-10 12:49:50 [-][-][-][error][yii\console\Exception] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "migration".' in D:\xampp\htdocs\maxmall\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\xampp\htdocs\maxmall\vendor\yiisoft\yii2\console\Application.php(161): yii\base\Module->runAction('migration', Array)
+#1 D:\xampp\htdocs\maxmall\vendor\yiisoft\yii2\console\Application.php(137): yii\console\Application->runAction('migration', Array)
+#2 D:\xampp\htdocs\maxmall\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 D:\xampp\htdocs\maxmall\yii(31): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\Exception' with message 'Unknown command "migration".' in D:\xampp\htdocs\maxmall\vendor\yiisoft\yii2\console\Application.php:163
+Stack trace:
+#0 D:\xampp\htdocs\maxmall\vendor\yiisoft\yii2\console\Application.php(137): yii\console\Application->runAction('migration', Array)
+#1 D:\xampp\htdocs\maxmall\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 D:\xampp\htdocs\maxmall\yii(31): yii\base\Application->run()
+#3 {main}
+2015-02-10 12:49:49 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Maaz\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'MAAZ-PC'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Maaz'
+    'LOCALAPPDATA' => 'C:\\Users\\Maaz\\AppData\\Local'
+    'LOGONSERVER' => '\\\\MicrosoftAccount'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\nodejs\\;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files\\nodejs'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 30 Stepping 5, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '1e05'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\Maaz\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Maaz\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'MAAZ-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'MAAZ-PC'
+    'USERNAME' => 'Maaz'
+    'USERPROFILE' => 'C:\\Users\\Maaz'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'VS110COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 11.0\\Common7\\Tools\\'
+    'VS120COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 12.0\\Common7\\Tools\\'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'D:\\xampp\\htdocs\\maxmall\\'
+    'PHP_SELF' => 'D:\\xampp\\htdocs\\maxmall\\yii'
+    'SCRIPT_NAME' => 'D:\\xampp\\htdocs\\maxmall\\yii'
+    'SCRIPT_FILENAME' => 'D:\\xampp\\htdocs\\maxmall\\yii'
+    'PATH_TRANSLATED' => 'D:\\xampp\\htdocs\\maxmall\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1423568989.8738
+    'REQUEST_TIME' => 1423568989
+    'argv' => [
+        0 => 'D:\\xampp\\htdocs\\maxmall\\yii'
+        1 => 'migration'
+    ]
+    'argc' => 2
+]
+2015-02-10 12:50:28 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'yii2advanced'' in D:\xampp\htdocs\maxmall\vendor\yiisoft\yii2\db\Connection.php:579
+Stack trace:
+#0 D:\xampp\htdocs\maxmall\vendor\yiisoft\yii2\db\Connection.php(579): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 D:\xampp\htdocs\maxmall\vendor\yiisoft\yii2\db\Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 D:\xampp\htdocs\maxmall\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#3 D:\xampp\htdocs\maxmall\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 D:\xampp\htdocs\maxmall\vendor\yiisoft\yii2\db\Command.php(208): yii\db\Connection->getSlavePdo()
+#5 D:\xampp\htdocs\maxmall\vendor\yiisoft\yii2\db\Command.php(815): yii\db\Command->prepare(true)
+#6 D:\xampp\htdocs\maxmall\vendor\yiisoft\yii2\db\Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 D:\xampp\htdocs\maxmall\vendor\yiisoft\yii2\db\mysql\Schema.php(198): yii\db\Command->queryAll()
+#8 D:\xampp\htdocs\maxmall\vendor\yiisoft\yii2\db\mysql\Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 D:\xampp\htdocs\maxmall\vendor\yiisoft\yii2\db\Schema.php(139): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 D:\xampp\htdocs\maxmall\vendor\yiisoft\yii2\console\controllers\MigrateController.php(126): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 D:\xampp\htdocs\maxmall\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(607): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 D:\xampp\htdocs\maxmall\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(99): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 D:\xampp\htdocs\maxmall\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 D:\xampp\htdocs\maxmall\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 D:\xampp\htdocs\maxmall\vendor\yiisoft\yii2\console\Controller.php(91): yii\base\Controller->runAction('', Array)
+#17 D:\xampp\htdocs\maxmall\vendor\yiisoft\yii2\base\Module.php(455): yii\console\Controller->runAction('', Array)
+#18 D:\xampp\htdocs\maxmall\vendor\yiisoft\yii2\console\Application.php(161): yii\base\Module->runAction('migrate', Array)
+#19 D:\xampp\htdocs\maxmall\vendor\yiisoft\yii2\console\Application.php(137): yii\console\Application->runAction('migrate', Array)
+#20 D:\xampp\htdocs\maxmall\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 D:\xampp\htdocs\maxmall\yii(31): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1049] Unknown database 'yii2advanced'' in D:\xampp\htdocs\maxmall\vendor\yiisoft\yii2\db\Connection.php:534
+Stack trace:
+#0 D:\xampp\htdocs\maxmall\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#1 D:\xampp\htdocs\maxmall\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 D:\xampp\htdocs\maxmall\vendor\yiisoft\yii2\db\Command.php(208): yii\db\Connection->getSlavePdo()
+#3 D:\xampp\htdocs\maxmall\vendor\yiisoft\yii2\db\Command.php(815): yii\db\Command->prepare(true)
+#4 D:\xampp\htdocs\maxmall\vendor\yiisoft\yii2\db\Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 D:\xampp\htdocs\maxmall\vendor\yiisoft\yii2\db\mysql\Schema.php(198): yii\db\Command->queryAll()
+#6 D:\xampp\htdocs\maxmall\vendor\yiisoft\yii2\db\mysql\Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 D:\xampp\htdocs\maxmall\vendor\yiisoft\yii2\db\Schema.php(139): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 D:\xampp\htdocs\maxmall\vendor\yiisoft\yii2\console\controllers\MigrateController.php(126): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 D:\xampp\htdocs\maxmall\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(607): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 D:\xampp\htdocs\maxmall\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(99): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 D:\xampp\htdocs\maxmall\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#13 D:\xampp\htdocs\maxmall\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#14 D:\xampp\htdocs\maxmall\vendor\yiisoft\yii2\console\Controller.php(91): yii\base\Controller->runAction('', Array)
+#15 D:\xampp\htdocs\maxmall\vendor\yiisoft\yii2\base\Module.php(455): yii\console\Controller->runAction('', Array)
+#16 D:\xampp\htdocs\maxmall\vendor\yiisoft\yii2\console\Application.php(161): yii\base\Module->runAction('migrate', Array)
+#17 D:\xampp\htdocs\maxmall\vendor\yiisoft\yii2\console\Application.php(137): yii\console\Application->runAction('migrate', Array)
+#18 D:\xampp\htdocs\maxmall\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 D:\xampp\htdocs\maxmall\yii(31): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2015-02-10 12:50:27 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Maaz\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'MAAZ-PC'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Maaz'
+    'LOCALAPPDATA' => 'C:\\Users\\Maaz\\AppData\\Local'
+    'LOGONSERVER' => '\\\\MicrosoftAccount'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\nodejs\\;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files\\nodejs'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 30 Stepping 5, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '1e05'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\Maaz\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Maaz\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'MAAZ-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'MAAZ-PC'
+    'USERNAME' => 'Maaz'
+    'USERPROFILE' => 'C:\\Users\\Maaz'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'VS110COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 11.0\\Common7\\Tools\\'
+    'VS120COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 12.0\\Common7\\Tools\\'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'D:\\xampp\\htdocs\\maxmall\\'
+    'PHP_SELF' => 'D:\\xampp\\htdocs\\maxmall\\yii'
+    'SCRIPT_NAME' => 'D:\\xampp\\htdocs\\maxmall\\yii'
+    'SCRIPT_FILENAME' => 'D:\\xampp\\htdocs\\maxmall\\yii'
+    'PATH_TRANSLATED' => 'D:\\xampp\\htdocs\\maxmall\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1423569027.528
+    'REQUEST_TIME' => 1423569027
+    'argv' => [
+        0 => 'D:\\xampp\\htdocs\\maxmall\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2015-11-29 16:51:50 [-][-][-][error][yii\console\Exception] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "blogs/rbac/add".' in D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\console\Application.php(167): yii\base\Module->runAction('blogs/rbac/add', Array)
+#1 D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('blogs/rbac/add', Array)
+#2 D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 D:\xampp_oo\htdocs\maxmall\yii(31): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\Exception' with message 'Unknown command "blogs/rbac/add".' in D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\console\Application.php:169
+Stack trace:
+#0 D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('blogs/rbac/add', Array)
+#1 D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 D:\xampp_oo\htdocs\maxmall\yii(31): yii\base\Application->run()
+#3 {main}
+2015-11-29 16:51:50 [-][-][-][info][application] $_SERVER = [
+    'ACLOCAL_PATH' => '/mingw64/share/aclocal:/usr/share/aclocal'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Syed\\AppData\\Roaming'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'MAAZ'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'DISPLAY' => 'needs-to-be-defined'
+    'EXEPATH' => 'C:\\Program Files\\Git'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'C:\\Users\\Syed'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Syed'
+    'HOSTNAME' => 'Maaz'
+    'INFOPATH' => '/usr/local/info:/usr/share/info:/usr/info:/share/info:'
+    'LANG' => 'en_US.UTF-8'
+    'LOCALAPPDATA' => 'C:\\Users\\Syed\\AppData\\Local'
+    'LOGONSERVER' => '\\\\MicrosoftAccount'
+    'MANPATH' => '/mingw64/share/man:/usr/local/man:/usr/share/man:/usr/man:/share/man:'
+    'MSYSTEM' => 'MINGW64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OLDPWD' => '/d/xampp_oo/htdocs'
+    'OS' => 'Windows_NT'
+    'PATH' => 'C:\\Users\\Syed\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\local\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\Syed\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn;C:\\Program Files (x86)\\Skype\\Phone;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\xampp_oo\\php;C:\\Program Files\\nodejs;C:\\Users\\Syed\\AppData\\Roaming\\npm;C:\\Program Files\\Git\\usr\\bin\\vendor_perl;C:\\Program Files\\Git\\usr\\bin\\core_perl'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'php' => 'D:\\xampp\\php'
+    'PKG_CONFIG_PATH' => '/mingw64/lib/pkgconfig:/mingw64/share/pkgconfig'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PRINTER' => 'Send To OneNote 2013'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 30 Stepping 5, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '1e05'
+    'ProgramData' => 'C:\\ProgramData'
+    'PROGRAMFILES' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PS1' => '\\[\\033]0;$MSYSTEM:${PWD//[^[:ascii:]]/?}\\007\\]\\n\\[\\033[32m\\]\\u@\\h \\[\\033[35m\\]$MSYSTEM \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n$ '
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => '/d/xampp_oo/htdocs/maxmall'
+    'SHELL' => '/usr/bin/bash'
+    'SHLVL' => '1'
+    'SSH_ASKPASS' => '/mingw64/libexec/git-core/git-gui--askpass'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Syed\\AppData\\Local\\Temp'
+    'TERM' => 'xterm'
+    'TMP' => 'C:\\Users\\Syed\\AppData\\Local\\Temp'
+    'TMPDIR' => 'C:\\Users\\Syed\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'MAAZ'
+    'USERDOMAIN_ROAMINGPROFILE' => 'MAAZ'
+    'USERNAME' => 'Syed'
+    'USERPROFILE' => 'C:\\Users\\Syed'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'VS110COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 11.0\\Common7\\Tools\\'
+    'VS120COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 12.0\\Common7\\Tools\\'
+    'WINDIR' => 'C:\\Windows'
+    '_' => '/usr/bin/winpty'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1448812310.7598
+    'REQUEST_TIME' => 1448812310
+    'argv' => [
+        0 => 'yii'
+        1 => 'blogs/rbac/add'
+    ]
+    'argc' => 2
+]
+2015-11-29 16:53:40 [-][-][-][error][yii\console\Exception] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "backend/blogs/rbac/add".' in D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\console\Application.php(167): yii\base\Module->runAction('backend/blogs/r...', Array)
+#1 D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('backend/blogs/r...', Array)
+#2 D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 D:\xampp_oo\htdocs\maxmall\yii(31): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\Exception' with message 'Unknown command "backend/blogs/rbac/add".' in D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\console\Application.php:169
+Stack trace:
+#0 D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('backend/blogs/r...', Array)
+#1 D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 D:\xampp_oo\htdocs\maxmall\yii(31): yii\base\Application->run()
+#3 {main}
+2015-11-29 16:53:40 [-][-][-][info][application] $_SERVER = [
+    'ACLOCAL_PATH' => '/mingw64/share/aclocal:/usr/share/aclocal'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Syed\\AppData\\Roaming'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'MAAZ'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'DISPLAY' => 'needs-to-be-defined'
+    'EXEPATH' => 'C:\\Program Files\\Git'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'C:\\Users\\Syed'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Syed'
+    'HOSTNAME' => 'Maaz'
+    'INFOPATH' => '/usr/local/info:/usr/share/info:/usr/info:/share/info:'
+    'LANG' => 'en_US.UTF-8'
+    'LOCALAPPDATA' => 'C:\\Users\\Syed\\AppData\\Local'
+    'LOGONSERVER' => '\\\\MicrosoftAccount'
+    'MANPATH' => '/mingw64/share/man:/usr/local/man:/usr/share/man:/usr/man:/share/man:'
+    'MSYSTEM' => 'MINGW64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OLDPWD' => '/d/xampp_oo/htdocs/maxmall/backend'
+    'OS' => 'Windows_NT'
+    'PATH' => 'C:\\Users\\Syed\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\local\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\Syed\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn;C:\\Program Files (x86)\\Skype\\Phone;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\xampp_oo\\php;C:\\Program Files\\nodejs;C:\\Users\\Syed\\AppData\\Roaming\\npm;C:\\Program Files\\Git\\usr\\bin\\vendor_perl;C:\\Program Files\\Git\\usr\\bin\\core_perl'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'php' => 'D:\\xampp\\php'
+    'PKG_CONFIG_PATH' => '/mingw64/lib/pkgconfig:/mingw64/share/pkgconfig'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PRINTER' => 'Send To OneNote 2013'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 30 Stepping 5, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '1e05'
+    'ProgramData' => 'C:\\ProgramData'
+    'PROGRAMFILES' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PS1' => '\\[\\033]0;$MSYSTEM:${PWD//[^[:ascii:]]/?}\\007\\]\\n\\[\\033[32m\\]\\u@\\h \\[\\033[35m\\]$MSYSTEM \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n$ '
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => '/d/xampp_oo/htdocs/maxmall'
+    'SHELL' => '/usr/bin/bash'
+    'SHLVL' => '1'
+    'SSH_ASKPASS' => '/mingw64/libexec/git-core/git-gui--askpass'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Syed\\AppData\\Local\\Temp'
+    'TERM' => 'xterm'
+    'TMP' => 'C:\\Users\\Syed\\AppData\\Local\\Temp'
+    'TMPDIR' => 'C:\\Users\\Syed\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'MAAZ'
+    'USERDOMAIN_ROAMINGPROFILE' => 'MAAZ'
+    'USERNAME' => 'Syed'
+    'USERPROFILE' => 'C:\\Users\\Syed'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'VS110COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 11.0\\Common7\\Tools\\'
+    'VS120COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 12.0\\Common7\\Tools\\'
+    'WINDIR' => 'C:\\Windows'
+    '_' => '/usr/bin/winpty'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1448812419.9977
+    'REQUEST_TIME' => 1448812419
+    'argv' => [
+        0 => 'yii'
+        1 => 'backend/blogs/rbac/add'
+    ]
+    'argc' => 2
+]
+2015-11-29 16:59:29 [-][-][-][error][yii\console\Exception] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "rbac".' in D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\console\Application.php(167): yii\base\Module->runAction('rbac', Array)
+#1 D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('rbac', Array)
+#2 D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 D:\xampp_oo\htdocs\maxmall\yii(31): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\Exception' with message 'Unknown command "rbac".' in D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\console\Application.php:169
+Stack trace:
+#0 D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('rbac', Array)
+#1 D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 D:\xampp_oo\htdocs\maxmall\yii(31): yii\base\Application->run()
+#3 {main}
+2015-11-29 16:59:29 [-][-][-][info][application] $_SERVER = [
+    'ACLOCAL_PATH' => '/mingw64/share/aclocal:/usr/share/aclocal'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Syed\\AppData\\Roaming'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'MAAZ'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'DISPLAY' => 'needs-to-be-defined'
+    'EXEPATH' => 'C:\\Program Files\\Git'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'C:\\Users\\Syed'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Syed'
+    'HOSTNAME' => 'Maaz'
+    'INFOPATH' => '/usr/local/info:/usr/share/info:/usr/info:/share/info:'
+    'LANG' => 'en_US.UTF-8'
+    'LOCALAPPDATA' => 'C:\\Users\\Syed\\AppData\\Local'
+    'LOGONSERVER' => '\\\\MicrosoftAccount'
+    'MANPATH' => '/mingw64/share/man:/usr/local/man:/usr/share/man:/usr/man:/share/man:'
+    'MSYSTEM' => 'MINGW64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OLDPWD' => '/d/xampp_oo/htdocs/maxmall/backend'
+    'OS' => 'Windows_NT'
+    'PATH' => 'C:\\Users\\Syed\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\local\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\Syed\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn;C:\\Program Files (x86)\\Skype\\Phone;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\xampp_oo\\php;C:\\Program Files\\nodejs;C:\\Users\\Syed\\AppData\\Roaming\\npm;C:\\Program Files\\Git\\usr\\bin\\vendor_perl;C:\\Program Files\\Git\\usr\\bin\\core_perl'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'php' => 'D:\\xampp\\php'
+    'PKG_CONFIG_PATH' => '/mingw64/lib/pkgconfig:/mingw64/share/pkgconfig'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PRINTER' => 'Send To OneNote 2013'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 30 Stepping 5, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '1e05'
+    'ProgramData' => 'C:\\ProgramData'
+    'PROGRAMFILES' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PS1' => '\\[\\033]0;$MSYSTEM:${PWD//[^[:ascii:]]/?}\\007\\]\\n\\[\\033[32m\\]\\u@\\h \\[\\033[35m\\]$MSYSTEM \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n$ '
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => '/d/xampp_oo/htdocs/maxmall'
+    'SHELL' => '/usr/bin/bash'
+    'SHLVL' => '1'
+    'SSH_ASKPASS' => '/mingw64/libexec/git-core/git-gui--askpass'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Syed\\AppData\\Local\\Temp'
+    'TERM' => 'xterm'
+    'TMP' => 'C:\\Users\\Syed\\AppData\\Local\\Temp'
+    'TMPDIR' => 'C:\\Users\\Syed\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'MAAZ'
+    'USERDOMAIN_ROAMINGPROFILE' => 'MAAZ'
+    'USERNAME' => 'Syed'
+    'USERPROFILE' => 'C:\\Users\\Syed'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'VS110COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 11.0\\Common7\\Tools\\'
+    'VS120COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 12.0\\Common7\\Tools\\'
+    'WINDIR' => 'C:\\Windows'
+    '_' => '/usr/bin/winpty'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1448812769.3407
+    'REQUEST_TIME' => 1448812769
+    'argv' => [
+        0 => 'yii'
+        1 => 'rbac'
+    ]
+    'argc' => 2
+]
+2015-11-29 16:59:33 [-][-][-][error][yii\console\Exception] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "rbac/add".' in D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\console\Application.php(167): yii\base\Module->runAction('rbac/add', Array)
+#1 D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('rbac/add', Array)
+#2 D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 D:\xampp_oo\htdocs\maxmall\yii(31): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\Exception' with message 'Unknown command "rbac/add".' in D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\console\Application.php:169
+Stack trace:
+#0 D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('rbac/add', Array)
+#1 D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 D:\xampp_oo\htdocs\maxmall\yii(31): yii\base\Application->run()
+#3 {main}
+2015-11-29 16:59:33 [-][-][-][info][application] $_SERVER = [
+    'ACLOCAL_PATH' => '/mingw64/share/aclocal:/usr/share/aclocal'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Syed\\AppData\\Roaming'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'MAAZ'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'DISPLAY' => 'needs-to-be-defined'
+    'EXEPATH' => 'C:\\Program Files\\Git'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'C:\\Users\\Syed'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Syed'
+    'HOSTNAME' => 'Maaz'
+    'INFOPATH' => '/usr/local/info:/usr/share/info:/usr/info:/share/info:'
+    'LANG' => 'en_US.UTF-8'
+    'LOCALAPPDATA' => 'C:\\Users\\Syed\\AppData\\Local'
+    'LOGONSERVER' => '\\\\MicrosoftAccount'
+    'MANPATH' => '/mingw64/share/man:/usr/local/man:/usr/share/man:/usr/man:/share/man:'
+    'MSYSTEM' => 'MINGW64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OLDPWD' => '/d/xampp_oo/htdocs/maxmall/backend'
+    'OS' => 'Windows_NT'
+    'PATH' => 'C:\\Users\\Syed\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\local\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\Syed\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn;C:\\Program Files (x86)\\Skype\\Phone;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\xampp_oo\\php;C:\\Program Files\\nodejs;C:\\Users\\Syed\\AppData\\Roaming\\npm;C:\\Program Files\\Git\\usr\\bin\\vendor_perl;C:\\Program Files\\Git\\usr\\bin\\core_perl'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'php' => 'D:\\xampp\\php'
+    'PKG_CONFIG_PATH' => '/mingw64/lib/pkgconfig:/mingw64/share/pkgconfig'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PRINTER' => 'Send To OneNote 2013'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 30 Stepping 5, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '1e05'
+    'ProgramData' => 'C:\\ProgramData'
+    'PROGRAMFILES' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PS1' => '\\[\\033]0;$MSYSTEM:${PWD//[^[:ascii:]]/?}\\007\\]\\n\\[\\033[32m\\]\\u@\\h \\[\\033[35m\\]$MSYSTEM \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n$ '
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => '/d/xampp_oo/htdocs/maxmall'
+    'SHELL' => '/usr/bin/bash'
+    'SHLVL' => '1'
+    'SSH_ASKPASS' => '/mingw64/libexec/git-core/git-gui--askpass'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Syed\\AppData\\Local\\Temp'
+    'TERM' => 'xterm'
+    'TMP' => 'C:\\Users\\Syed\\AppData\\Local\\Temp'
+    'TMPDIR' => 'C:\\Users\\Syed\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'MAAZ'
+    'USERDOMAIN_ROAMINGPROFILE' => 'MAAZ'
+    'USERNAME' => 'Syed'
+    'USERPROFILE' => 'C:\\Users\\Syed'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'VS110COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 11.0\\Common7\\Tools\\'
+    'VS120COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 12.0\\Common7\\Tools\\'
+    'WINDIR' => 'C:\\Windows'
+    '_' => '/usr/bin/winpty'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1448812772.987
+    'REQUEST_TIME' => 1448812772
+    'argv' => [
+        0 => 'yii'
+        1 => 'rbac/add'
+    ]
+    'argc' => 2
+]
+2015-11-29 16:59:47 [-][-][-][error][yii\console\Exception] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "rbac/init".' in D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\console\Application.php(167): yii\base\Module->runAction('rbac/init', Array)
+#1 D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('rbac/init', Array)
+#2 D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 D:\xampp_oo\htdocs\maxmall\yii(31): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\Exception' with message 'Unknown command "rbac/init".' in D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\console\Application.php:169
+Stack trace:
+#0 D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('rbac/init', Array)
+#1 D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 D:\xampp_oo\htdocs\maxmall\yii(31): yii\base\Application->run()
+#3 {main}
+2015-11-29 16:59:47 [-][-][-][info][application] $_SERVER = [
+    'ACLOCAL_PATH' => '/mingw64/share/aclocal:/usr/share/aclocal'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Syed\\AppData\\Roaming'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'MAAZ'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'DISPLAY' => 'needs-to-be-defined'
+    'EXEPATH' => 'C:\\Program Files\\Git'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'C:\\Users\\Syed'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Syed'
+    'HOSTNAME' => 'Maaz'
+    'INFOPATH' => '/usr/local/info:/usr/share/info:/usr/info:/share/info:'
+    'LANG' => 'en_US.UTF-8'
+    'LOCALAPPDATA' => 'C:\\Users\\Syed\\AppData\\Local'
+    'LOGONSERVER' => '\\\\MicrosoftAccount'
+    'MANPATH' => '/mingw64/share/man:/usr/local/man:/usr/share/man:/usr/man:/share/man:'
+    'MSYSTEM' => 'MINGW64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OLDPWD' => '/d/xampp_oo/htdocs/maxmall/backend'
+    'OS' => 'Windows_NT'
+    'PATH' => 'C:\\Users\\Syed\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\local\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\Syed\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn;C:\\Program Files (x86)\\Skype\\Phone;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\xampp_oo\\php;C:\\Program Files\\nodejs;C:\\Users\\Syed\\AppData\\Roaming\\npm;C:\\Program Files\\Git\\usr\\bin\\vendor_perl;C:\\Program Files\\Git\\usr\\bin\\core_perl'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'php' => 'D:\\xampp\\php'
+    'PKG_CONFIG_PATH' => '/mingw64/lib/pkgconfig:/mingw64/share/pkgconfig'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PRINTER' => 'Send To OneNote 2013'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 30 Stepping 5, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '1e05'
+    'ProgramData' => 'C:\\ProgramData'
+    'PROGRAMFILES' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PS1' => '\\[\\033]0;$MSYSTEM:${PWD//[^[:ascii:]]/?}\\007\\]\\n\\[\\033[32m\\]\\u@\\h \\[\\033[35m\\]$MSYSTEM \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n$ '
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => '/d/xampp_oo/htdocs/maxmall'
+    'SHELL' => '/usr/bin/bash'
+    'SHLVL' => '1'
+    'SSH_ASKPASS' => '/mingw64/libexec/git-core/git-gui--askpass'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Syed\\AppData\\Local\\Temp'
+    'TERM' => 'xterm'
+    'TMP' => 'C:\\Users\\Syed\\AppData\\Local\\Temp'
+    'TMPDIR' => 'C:\\Users\\Syed\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'MAAZ'
+    'USERDOMAIN_ROAMINGPROFILE' => 'MAAZ'
+    'USERNAME' => 'Syed'
+    'USERPROFILE' => 'C:\\Users\\Syed'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'VS110COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 11.0\\Common7\\Tools\\'
+    'VS120COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 12.0\\Common7\\Tools\\'
+    'WINDIR' => 'C:\\Windows'
+    '_' => '/usr/bin/winpty'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1448812787.1475
+    'REQUEST_TIME' => 1448812787
+    'argv' => [
+        0 => 'yii'
+        1 => 'rbac/init'
+    ]
+    'argc' => 2
+]
+2015-11-29 17:02:16 [-][-][-][error][yii\console\Exception] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "rbac/init".' in D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\console\Application.php(167): yii\base\Module->runAction('rbac/init', Array)
+#1 D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('rbac/init', Array)
+#2 D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 D:\xampp_oo\htdocs\maxmall\yii(31): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\Exception' with message 'Unknown command "rbac/init".' in D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\console\Application.php:169
+Stack trace:
+#0 D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('rbac/init', Array)
+#1 D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 D:\xampp_oo\htdocs\maxmall\yii(31): yii\base\Application->run()
+#3 {main}
+2015-11-29 17:02:16 [-][-][-][info][application] $_SERVER = [
+    'ACLOCAL_PATH' => '/mingw64/share/aclocal:/usr/share/aclocal'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Syed\\AppData\\Roaming'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'MAAZ'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'DISPLAY' => 'needs-to-be-defined'
+    'EXEPATH' => 'C:\\Program Files\\Git'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'C:\\Users\\Syed'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Syed'
+    'HOSTNAME' => 'Maaz'
+    'INFOPATH' => '/usr/local/info:/usr/share/info:/usr/info:/share/info:'
+    'LANG' => 'en_US.UTF-8'
+    'LOCALAPPDATA' => 'C:\\Users\\Syed\\AppData\\Local'
+    'LOGONSERVER' => '\\\\MicrosoftAccount'
+    'MANPATH' => '/mingw64/share/man:/usr/local/man:/usr/share/man:/usr/man:/share/man:'
+    'MSYSTEM' => 'MINGW64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OLDPWD' => '/d/xampp_oo/htdocs/maxmall/backend'
+    'OS' => 'Windows_NT'
+    'PATH' => 'C:\\Users\\Syed\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\local\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\Syed\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn;C:\\Program Files (x86)\\Skype\\Phone;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\xampp_oo\\php;C:\\Program Files\\nodejs;C:\\Users\\Syed\\AppData\\Roaming\\npm;C:\\Program Files\\Git\\usr\\bin\\vendor_perl;C:\\Program Files\\Git\\usr\\bin\\core_perl'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'php' => 'D:\\xampp\\php'
+    'PKG_CONFIG_PATH' => '/mingw64/lib/pkgconfig:/mingw64/share/pkgconfig'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PRINTER' => 'Send To OneNote 2013'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 30 Stepping 5, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '1e05'
+    'ProgramData' => 'C:\\ProgramData'
+    'PROGRAMFILES' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PS1' => '\\[\\033]0;$MSYSTEM:${PWD//[^[:ascii:]]/?}\\007\\]\\n\\[\\033[32m\\]\\u@\\h \\[\\033[35m\\]$MSYSTEM \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n$ '
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => '/d/xampp_oo/htdocs/maxmall'
+    'SHELL' => '/usr/bin/bash'
+    'SHLVL' => '1'
+    'SSH_ASKPASS' => '/mingw64/libexec/git-core/git-gui--askpass'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Syed\\AppData\\Local\\Temp'
+    'TERM' => 'xterm'
+    'TMP' => 'C:\\Users\\Syed\\AppData\\Local\\Temp'
+    'TMPDIR' => 'C:\\Users\\Syed\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'MAAZ'
+    'USERDOMAIN_ROAMINGPROFILE' => 'MAAZ'
+    'USERNAME' => 'Syed'
+    'USERPROFILE' => 'C:\\Users\\Syed'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'VS110COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 11.0\\Common7\\Tools\\'
+    'VS120COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 12.0\\Common7\\Tools\\'
+    'WINDIR' => 'C:\\Windows'
+    '_' => '/usr/bin/winpty'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1448812936.6246
+    'REQUEST_TIME' => 1448812936
+    'argv' => [
+        0 => 'yii'
+        1 => 'rbac/init'
+    ]
+    'argc' => 2
+]
+2015-11-29 17:03:17 [-][-][-][error][yii\console\Exception] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "backend/blogs/rbac/init".' in D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\console\Application.php(167): yii\base\Module->runAction('backend/blogs/r...', Array)
+#1 D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('backend/blogs/r...', Array)
+#2 D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 D:\xampp_oo\htdocs\maxmall\yii(31): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\Exception' with message 'Unknown command "backend/blogs/rbac/init".' in D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\console\Application.php:169
+Stack trace:
+#0 D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('backend/blogs/r...', Array)
+#1 D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 D:\xampp_oo\htdocs\maxmall\yii(31): yii\base\Application->run()
+#3 {main}
+2015-11-29 17:03:17 [-][-][-][info][application] $_SERVER = [
+    'ACLOCAL_PATH' => '/mingw64/share/aclocal:/usr/share/aclocal'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Syed\\AppData\\Roaming'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'MAAZ'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'DISPLAY' => 'needs-to-be-defined'
+    'EXEPATH' => 'C:\\Program Files\\Git'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'C:\\Users\\Syed'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Syed'
+    'HOSTNAME' => 'Maaz'
+    'INFOPATH' => '/usr/local/info:/usr/share/info:/usr/info:/share/info:'
+    'LANG' => 'en_US.UTF-8'
+    'LOCALAPPDATA' => 'C:\\Users\\Syed\\AppData\\Local'
+    'LOGONSERVER' => '\\\\MicrosoftAccount'
+    'MANPATH' => '/mingw64/share/man:/usr/local/man:/usr/share/man:/usr/man:/share/man:'
+    'MSYSTEM' => 'MINGW64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OLDPWD' => '/d/xampp_oo/htdocs/maxmall/backend'
+    'OS' => 'Windows_NT'
+    'PATH' => 'C:\\Users\\Syed\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\local\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\Syed\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn;C:\\Program Files (x86)\\Skype\\Phone;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\xampp_oo\\php;C:\\Program Files\\nodejs;C:\\Users\\Syed\\AppData\\Roaming\\npm;C:\\Program Files\\Git\\usr\\bin\\vendor_perl;C:\\Program Files\\Git\\usr\\bin\\core_perl'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'php' => 'D:\\xampp\\php'
+    'PKG_CONFIG_PATH' => '/mingw64/lib/pkgconfig:/mingw64/share/pkgconfig'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PRINTER' => 'Send To OneNote 2013'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 30 Stepping 5, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '1e05'
+    'ProgramData' => 'C:\\ProgramData'
+    'PROGRAMFILES' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PS1' => '\\[\\033]0;$MSYSTEM:${PWD//[^[:ascii:]]/?}\\007\\]\\n\\[\\033[32m\\]\\u@\\h \\[\\033[35m\\]$MSYSTEM \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n$ '
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => '/d/xampp_oo/htdocs/maxmall'
+    'SHELL' => '/usr/bin/bash'
+    'SHLVL' => '1'
+    'SSH_ASKPASS' => '/mingw64/libexec/git-core/git-gui--askpass'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Syed\\AppData\\Local\\Temp'
+    'TERM' => 'xterm'
+    'TMP' => 'C:\\Users\\Syed\\AppData\\Local\\Temp'
+    'TMPDIR' => 'C:\\Users\\Syed\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'MAAZ'
+    'USERDOMAIN_ROAMINGPROFILE' => 'MAAZ'
+    'USERNAME' => 'Syed'
+    'USERPROFILE' => 'C:\\Users\\Syed'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'VS110COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 11.0\\Common7\\Tools\\'
+    'VS120COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 12.0\\Common7\\Tools\\'
+    'WINDIR' => 'C:\\Windows'
+    '_' => '/usr/bin/winpty'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1448812997.2326
+    'REQUEST_TIME' => 1448812997
+    'argv' => [
+        0 => 'yii'
+        1 => 'backend/blogs/rbac/init'
+    ]
+    'argc' => 2
+]
+2015-11-29 17:04:01 [-][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'You should configure "authManager" component to use database before executing this migration.' in D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php:28
+Stack trace:
+#0 D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php(35): m140506_102106_rbac_init->getAuthManager()
+#1 D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(492): m140506_102106_rbac_init->up()
+#2 D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(129): yii\console\controllers\BaseMigrateController->migrateUp('m140506_102106_...')
+#3 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#4 D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\console\Controller.php(91): yii\base\Controller->runAction('', Array)
+#7 D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\base\Module.php(455): yii\console\Controller->runAction('', Array)
+#8 D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\console\Application.php(167): yii\base\Module->runAction('migrate', Array)
+#9 D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('migrate', Array)
+#10 D:\xampp_oo\htdocs\maxmall\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 D:\xampp_oo\htdocs\maxmall\yii(31): yii\base\Application->run()
+#12 {main}
+2015-11-29 17:03:57 [-][-][-][info][application] $_SERVER = [
+    'ACLOCAL_PATH' => '/mingw64/share/aclocal:/usr/share/aclocal'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Syed\\AppData\\Roaming'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'MAAZ'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'DISPLAY' => 'needs-to-be-defined'
+    'EXEPATH' => 'C:\\Program Files\\Git'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'C:\\Users\\Syed'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Syed'
+    'HOSTNAME' => 'Maaz'
+    'INFOPATH' => '/usr/local/info:/usr/share/info:/usr/info:/share/info:'
+    'LANG' => 'en_US.UTF-8'
+    'LOCALAPPDATA' => 'C:\\Users\\Syed\\AppData\\Local'
+    'LOGONSERVER' => '\\\\MicrosoftAccount'
+    'MANPATH' => '/mingw64/share/man:/usr/local/man:/usr/share/man:/usr/man:/share/man:'
+    'MSYSTEM' => 'MINGW64'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OLDPWD' => '/d/xampp_oo/htdocs/maxmall/backend'
+    'OS' => 'Windows_NT'
+    'PATH' => 'C:\\Users\\Syed\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\local\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\Syed\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn;C:\\Program Files (x86)\\Skype\\Phone;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\xampp_oo\\php;C:\\Program Files\\nodejs;C:\\Users\\Syed\\AppData\\Roaming\\npm;C:\\Program Files\\Git\\usr\\bin\\vendor_perl;C:\\Program Files\\Git\\usr\\bin\\core_perl'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'php' => 'D:\\xampp\\php'
+    'PKG_CONFIG_PATH' => '/mingw64/lib/pkgconfig:/mingw64/share/pkgconfig'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PRINTER' => 'Send To OneNote 2013'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 30 Stepping 5, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '1e05'
+    'ProgramData' => 'C:\\ProgramData'
+    'PROGRAMFILES' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PS1' => '\\[\\033]0;$MSYSTEM:${PWD//[^[:ascii:]]/?}\\007\\]\\n\\[\\033[32m\\]\\u@\\h \\[\\033[35m\\]$MSYSTEM \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n$ '
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => '/d/xampp_oo/htdocs/maxmall'
+    'SHELL' => '/usr/bin/bash'
+    'SHLVL' => '1'
+    'SSH_ASKPASS' => '/mingw64/libexec/git-core/git-gui--askpass'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Syed\\AppData\\Local\\Temp'
+    'TERM' => 'xterm'
+    'TMP' => 'C:\\Users\\Syed\\AppData\\Local\\Temp'
+    'TMPDIR' => 'C:\\Users\\Syed\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'MAAZ'
+    'USERDOMAIN_ROAMINGPROFILE' => 'MAAZ'
+    'USERNAME' => 'Syed'
+    'USERPROFILE' => 'C:\\Users\\Syed'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'VS110COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 11.0\\Common7\\Tools\\'
+    'VS120COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 12.0\\Common7\\Tools\\'
+    'WINDIR' => 'C:\\Windows'
+    '_' => '/usr/bin/winpty'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1448813037.6327
+    'REQUEST_TIME' => 1448813037
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/rbac/migrations/'
+    ]
+    'argc' => 3
+]
