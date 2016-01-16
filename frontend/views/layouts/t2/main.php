@@ -15,6 +15,49 @@
     <link href="<?php echo Yii::getAlias('@web') ?>/css/t2/style.css" rel="stylesheet">
     <link href="<?php echo Yii::getAlias('@web') ?>/css/style.css" rel="stylesheet">
     <link href="<?php echo Yii::getAlias('@web') ?>/css/t2/checkout.css" rel="stylesheet">
+	
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800|Raleway:400,300,600,700,500|Noto+Sans:400,700|Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
+	
+	<link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css" />
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="./font-awesome-4.0.3/css/font-awesome.css" type="text/css" />
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="./css/owl.carousel.css" type="text/css" />
+	<!-- Owl Carousal -->
+	<link rel="stylesheet" href="./css/animate.css" type="text/css" />
+	<!-- Animation -->
+
+	<link rel="stylesheet" href="./css/ion.rangeSlider.css" />
+	<!-- Range Slider -->
+	<link rel="stylesheet" href="./css/ion.rangeSlider.skinFlat.css" />
+	<!-- Range Slider -->
+
+	<link rel="stylesheet" href="./css/style.css" type="text/css" />
+	<!-- Style -->
+	<link rel="stylesheet" href="./css/responsive.css" type="text/css" />
+	<!-- Responsive -->
+	<link rel="stylesheet" type="text/css" href="./css/revolution.css" media="screen" />
+	<!-- Slider Revolution -->
+	<link rel="alternate stylesheet " type="text/css" href="./css/purple.css" title="purple" />
+	<!-- Purple -->
+	<link rel="alternate stylesheet" type="text/css" href="./css/green.css" title="green" />
+	<!-- Green -->
+	<link rel="alternate stylesheet" type="text/css" href="./css/orange.css" title="orange" />
+	<!-- Orange -->
+	<link rel="alternate stylesheet" type="text/css" href="./css/cyan.css" title="cyan" />
+	<!-- Cyan -->
+	<link rel="alternate stylesheet" type="text/css" href="./css/red.css" title="red" />
+	<!-- Red -->
+	<link rel="alternate stylesheet" type="text/css" href="./css/black.css" title="black" />
+	<!-- Black -->
+	<link rel="alternate stylesheet" type="text/css" href="./css/pink.css" title="pink" />
+	<!-- Pink -->
+	<link rel="alternate stylesheet" type="text/css" href="./css/gray.css" title="gray" />
+	<!-- Gray -->
+	<link rel="alternate stylesheet" type="text/css" href="./css/grunge.css" title="grunge" />
+	<!-- Grunge -->
+	<link rel="alternate stylesheet" type="text/css" href="./css/brown.css" title="brown" />
+	<!-- Brown -->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -24,97 +67,92 @@
 </head>
 
 <body>
-    <div id="main-container" class="container">
+<div class="theme-layout">
         <!-- Navigation -->
-        <header class="header1">
-            <div class="container">
-                <div class="col-lg-12 col-sm-12 header-black">
-                    <div class="col-lg-8">
-                        <div class="top-bar">
-                            <h5>Welcome</h5>
-                            <ul class=" language list-inline margin-9">
-                               <li>
-                                    <?php if(\Yii::$app->user->isGuest) { ?>
-                                        <a href="<?= Yii::$app->urlManager->createUrl('site/login') ?>">sign in</a>
-                                    <?php } else {?>
-                                        <a href="<?= Yii::$app->urlManager->createUrl('site/logout') ?>">sign out</a>
-                                    <?php } ?>
-                                    
-                                </li>
-
-                                <li>
-                                    <a href="<?= Yii::$app->urlManager->createUrl('site/register-store') ?>">Register Store</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2">
-                        <div class="top-bar">
-                            <ul class=" language list-inline margin-9">
-                                <li><a href="#" title=""><i class="fa fa-shopping-cart"></i><span>CART:O Item</span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-sm-12">
-                        <div class="checkout checkout-2">
-                            <a href="<?= Yii::$app->urlManager->createUrl('cart/index') ?>">Checkout<i class="fa fa-angle-double-right"></i></a>
-                        </div>
-                    </div>
-                </div>
+  <header class="header1">
+    <div class="container">
+      <div class="col-lg-12 col-sm-12 header-black">
+        <div class="col-lg-8">
+          <div class="top-bar">
+            <h5>Welcome</h5>
+            <ul class=" language list-inline margin-9">
+              <li><a href="#" title="">SIGN IN</a></li>
+              <li><a href="#" title="">ACCOUNT</a></li>
+              <li><a href="#" title="">YOUR LIST</a></li>
+              <li><a href="#" title="">AUTO-RERODER &amp; SAVE</a></li>
+              <li><a href="#" title="">HELP</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="top-bar">
+            <ul class=" language list-inline margin-9">
+              <li><a href="cart-1.html" title=""><i class="fa fa-shopping-cart"></i><span>CART:O Item</span></a></li>
+            </ul>
+          </div>
+        </div>		  
+        <div class="col-lg-2 col-sm-12">
+			<div class="checkout checkout-2"><a href="<?= Yii::$app->urlManager->createUrl('cart/index') ?>"> Checkout<i class="fa fa-angle-double-right"></i></a>
+			</div>
+        </div>
+      </div>
+    </div>
+    <nav>
+      <div class="container">
+        <div class="col-lg-12 header-background">
+          <div class="col-lg-7 col-md-3 col-sm-12 col-xs-12">
+            <div class="logo"> <a href="./index.html" title=""> <img src="<?= Yii::$app->urlManager->getBaseUrl() . '/images/logo.jpg'?>" alt="" /> </a> </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12 info ">
+            <h3 class="pull-right">NEED IT BY 12/24 ?</h3>
+            <h6  class="pull-right">Order By 12/33 2:00 PM CT <br />
+              Select Overnight Shipping</h6>
+          </div>
+          <div class="col-lg-3  col-md-3 col-sm-12  col-xs-12 pull-right margin-20">
+            <div class="search-header">
+              <form>
+                <input type="text" placeholder="Search Here" />
+                <a href="#" title=""><i class="fa fa-search"></i></a>
+              </form>
             </div>
-            <nav>
-                <div class="container">
-                    <div class="col-lg-12 header-background">
-                        <div class="col-lg-7 col-md-3 col-sm-12 col-xs-12">
-                            <div class="logo"> <a href="./index.html" title=""> <img src="<?php echo Yii::getAlias('@web') ?>/images/t2/logo.jpg" alt="" /> </a> </div>
-                        </div>
-                        <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12 info ">
-                            <h3 class="pull-right">NEED IT BY 12/24 ?</h3>
-                            <h6 class="pull-right">Order By 12/33 2:00 PM CT <br />
-                                Select Overnight Shipping</h6>
-                        </div>
-                        <div class="col-lg-3  col-md-3 col-sm-12  col-xs-12 pull-right margin-20">
-                            <div class="search-header">
-                                <form>
-                                    <input type="text" placeholder="Search Here" />
-                                    <a href="#" title=""><i class="fa fa-search"></i></a>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12  color-grey ">
-                        <div class="menu">
-                            <ul>
-                                <?php $store = $this->params['store_menu']; //print_r($data); exit;?>
-                                    <li><a href="<?= Yii::$app->urlManager->createUrl('home/index') ?>" title="">HOME</a> </li>
-                                    <li>
-                                        <a href="#" title="">Shopes <i class="fa fa-chevron-down"></i></a>
-                                        <ul>
-                                            <?php foreach($store as $st): ?>
-                                                <li><a href="<?= Yii::$app->urlManager->createUrl('home/storedetail/' . $st['store_id'] ) ?>" title=""><?= $st['store_name'] ?></a></li>
-                                            <?php endforeach; ?>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#" title="">HOLE SALE <i class="fa fa-chevron-down"></i></a>
-                                        <ul class="mega2">
-                                            <li><a href="#" title="">HOLE SALE 1</a> </li>
-                                            <li><a href="#" title="">HOLE SALE 2</a>
-                                                <ul>
-                                                    <li><a href="#" title="">HOLE SALE 3</a></li>
-                                                    <li><a href="#" title="">HOLE SALE 4</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#" title="">ABOUT</a> </li>
-                                    <li><a href="#" title="">CONTACT US</a> </li>
-                                    <li><a href="#" title="">BLOG</a> </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </header>
+          </div>
+        </div>
+        <div class="col-lg-12  color-grey ">
+          <div class="menu">
+            <ul>
+              <li><a href="#" title="">HOME</a> </li>
+              <li><a href="#" title="">NEW ARRIVALS <i class="fa fa-chevron-down"></i></a>
+                <ul>
+                  <li><a href="#" title="">Men Clothing</a></li>
+                  <li><a href="#" title="">Women Clothing</a>
+                    <ul>
+                      <li><a href="#" title="">Women Clothing 1</a></li>
+                      <li><a href="#" title="">Women Clothing 2</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#" title="">Children Clothing</a></li>
+                </ul>
+              </li>
+              <li><a href="#" title="">HOLE SALE <i class="fa fa-chevron-down"></i></a>
+                <ul class="mega2">
+                  <li><a href="#" title="">HOLE SALE 1</a> </li>
+                  <li><a href="#" title="">HOLE SALE 2</a>
+                    <ul>
+                      <li><a href="#" title="">HOLE SALE 3</a></li>
+                      <li><a href="#" title="">HOLE SALE 4</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="#" title="">ABOUT</a> </li>
+              <li><a href="#" title="">CONTACT US</a> </li>
+              <li><a href="#" title="">BLOG</a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
         <header class="responsive-header">
             <div class="search-header">
                 <form>
@@ -188,109 +226,134 @@
             </div>
         </div>
         <!-- /.container -->
-        <div class="container">
             <!-- Footer -->
-            <footer>
-                <div class="row">
-                    <div class="col-lg-12 footer-subscribe">
-                        <div class="col-lg-8 col-md-8 col-sm-8 container newsletter">
-                            <label class="text-uppercase">newsletter</label>
-                            <input type="text" name="email" />
-                            <button type="submit">subscribe</button>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-4 social-icon">
-                            <img src="<?php echo Yii::getAlias('@web') ?>/images/t2/social-icons.png" alt="" />
-                            <a href="#" class="fb">
-                                <i class="fb-icon"></i>
-                            </a>
-                            <a href="#" class="twt-icon">
-                                <i class="twt-icon"></i>
-                            </a>
-                            <a href="#" class="g-icon">
-                                <i class="gplus-icon"></i>
-                            </a>
-                            <a href="#" class="rss-icon">
-                                <i class="rss-icon"></i>
-                            </a>
-                            <a href="#" class="pin-icon">
-                                <i class="pin-icon"></i>
-                            </a>
-                            <a href="#" class="linkedin-icon">
-                                <i class="linkedin-icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12 container footer-content">
-                        <div class="col-lg-3 col-md-3 col-sm-3">
-                            <img src="<?php echo Yii::getAlias('@web') ?>/images/t2/logo-footer.png" style="width: 209px" alt="" />
-                            <br>
-                            <p>Lorem ipsim</p>
-                            <div class="cart-option">
-                                <img src="<?php echo Yii::getAlias('@web') ?>/images/t2/payment-opt.png" alt="" />
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-2 col-sm-2">
-                            <h5>information</h5>
-                            <ul>
-                                <li>about us</li>
-                                <li>delivery information</li>
-                                <li>privacy policy</li>
-                                <li>term & condition</li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-2 col-md-2 col-sm-2">
-                            <h5>Customer service</h5>
-                            <ul>
-                                <li>contact us</li>
-                                <li>returns</li>
-                                <li>site map</li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-2 col-md-2 col-sm-2">
-                            <h5>extras</h5>
-                            <ul>
-                                <li>brands</li>
-                                <li>gift voucher</li>
-                                <li>affiliates</li>
-                                <li>specials</li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3">
-                            <h5>contact us</h5>
-                            <ul>
-                                <li>
-                                    <i class="pin-icon"></i>
-                                    <p>123 main street to London </p>
-                                </li>
-                                <li>
-                                    <i class="phn-icon"></i>
-                                    <p>+1-123456-95</p>
-                                </li>
-                                <li>
-                                    <i class="email-icon"></i>
-                                    <p>support@yourcompany.com</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="row copyright">
-                    <p class="text-capitalize text-center">All right reserved</p>
-                </div>
-            </footer>
+           <section id="brands">
+				<div class="fixed-img sec-bg3"></div>
+				<div class="container"> <span><i>OUR</i> BRANDS</span>
+					<div class="brands"> 
+						<a href="#" title=""><img src="<?= Yii::$app->urlManager->getBaseUrl() . '/images/brand1.png'?>" alt="" /></a> 
+						<a href="#" title=""><img src="<?= Yii::$app->urlManager->getBaseUrl() . '/images/brand2.png'?>" alt="" /></a> 
+						<a href="#" title=""><img src="<?= Yii::$app->urlManager->getBaseUrl() . '/images/brand2.png'?>" alt="" /></a> 
+						<a href="#" title=""><img src="<?= Yii::$app->urlManager->getBaseUrl() . '/images/brand3.png'?>" alt="" /></a> 
+						<a href="#" title=""><img src="<?= Yii::$app->urlManager->getBaseUrl() . '/images/brand4.png'?>" alt="" /></a> 
+						<a href="#" title=""><img src="<?= Yii::$app->urlManager->getBaseUrl() . '/images/brand2.png'?>" alt="" /></a> 
+						<a href="#" title=""><img src="<?= Yii::$app->urlManager->getBaseUrl() . '/images/brand4.png'?>" alt="" /></a> 
+						<a href="#" title=""><img src="<?= Yii::$app->urlManager->getBaseUrl() . '/images/brand2.png'?>" alt="" /></a> 
+						<a href="#" title=""><img src="<?= Yii::$app->urlManager->getBaseUrl() . '/images/brand3.png'?>" alt="" /></a> 
+						<a href="#" title=""><img src="<?= Yii::$app->urlManager->getBaseUrl() . '/images/brand4.png'?>" alt="" /></a> 
+					</div>	
+				</div>
+		</section>
+  <footer class="block">
+    <div class="row">
+      <div class="container">
+        <div class="col-md-12">
+          <div class="col-lg-8 col-sm-12">
+            <div class="compare-with">
+              <form>
+                <label>Newsletter</label>
+                <input type="text" placeholder="Email Address">
+                <a href=""><i class="fa fa-envelope-o"></i>Subscribe</a>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-12">
+            <ul class="social-btns">
+              <li><a href="#" title=""><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#" title=""><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#" title=""><i class="fa fa-google-plus"></i></a></li>
+              <li><a href="#" title=""><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="#" title=""><i class="fa fa-rss"></i></a></li>
+              <li><a href="#" title=""><i class="fa fa-youtube"></i></a></li>
+              <li><a href="#" title=""><i class="fa fa-pinterest"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class=" col-lg-3 col-sm-12 box  margin-100"> <a href="#"><img src="<?= Yii::$app->urlManager->getBaseUrl().'/images/logo.jpg'?>" /></a>
+          <p>Lorem ipsum dolor sit amet, consectetur  adipiscing elit, sed d copy</p>
+            <div class="payment-accept ">
+              <ul>
+                <li><a href="#" title=""><img src="<?= Yii::$app->urlManager->getBaseUrl().'/images/payment1.png'?>" alt=""></a></li>
+                <li><a href="#" title=""><img src="<?= Yii::$app->urlManager->getBaseUrl().'/images/payment3.png'?>" alt=""></a></li>
+                <li><a href="#" title=""><img src="./images/payment4.png" alt=""></a></li>
+                <li><a href="#" title=""><img src="<?= Yii::$app->urlManager->getBaseUrl().'/images/payment5.png'?>" alt=""></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-12 box  margin-100">
+            <h3>INFORMATION</h3>
+            <ul class="padding-0">
+              <li><a href="#"><i class="fa fa-chevron-right"></i>About Us </a></li>
+              <li><a href="#"><i class="fa fa-chevron-right"></i>Delivery Information</a></li>
+              <li><a href="#"><i class="fa fa-chevron-right"></i>Privacy Policy </a></li>
+              <li><a href="#"><i class="fa fa-chevron-right"></i>Terms & Condition</a></li>
+            </ul>
+          </div>
+          <div class=" col-lg-2 col-sm-12 box  margin-100">
+            <h3>CUSTOMER SERVICE</h3>
+            <ul class="padding-0">
+              <li><a href="#"><i class="fa fa-chevron-right"></i>Contact Us </a></li>
+              <li><a href="#"><i class="fa fa-chevron-right"></i> Returns</a></li>
+              <li><a href="#"><i class="fa fa-chevron-right"></i>Site Map </a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-sm-12 box  margin-100">
+            <h3>EXTRA</h3>
+            <ul class="padding-0">
+              <li><a href="#"><i class="fa fa-chevron-right"></i>Brands  Specials</a></li>
+              <li><a href="#"><i class="fa fa-chevron-right"></i> Gift Vouchers</a></li>
+              <li><a href="#"><i class="fa fa-chevron-right"></i> Affiliates </a></li>
+              <li><a href="#"><i class="fa fa-chevron-right"></i> Specials</a></li>
+            </ul>
+          </div>
+          <div class=" col-lg-3 col-sm-12 box-1  margin-100">
+            <h3>CONTACT US</h3>
+            <ul class="padding-0 list-unstyled">
+              <li><a href="#"><img src="<?= Yii::$app->urlManager->getBaseUrl().'/images/map1.png'?>" />123 Main Street, Anytown, CA 12345 USA</a></li>
+              <li><a href="#" class="skype"><img src="<?= Yii::$app->urlManager->getBaseUrl().'/images/cell.png'?>" /> +1 123 456 7890</a></li>
+              <li><a href="#"><img src="<?= Yii::$app->urlManager->getBaseUrl().'/images/msg.png'?>" />support@YourCompany.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="bottom-line">
+    <div class="container">
+      <div class="row"> </div>
+    </div>
+    <span>All Rights Reserved. @ <i>YourCompany</i>.</span> </div>
             <input type="hidden" name="_csrf" value="<?=Yii::$app->request->getCsrfToken()?>" />
             <input id="baseUrl" type="hidden" name="baseUrl" value="<?= Yii::$app->urlManager->getBaseUrl() ?>" />
-        </div>
         <!-- /.container -->
-    </div>
+    </di-v>
     <!-- jQuery -->
     <script src="<?php echo Yii::getAlias('@web') ?>/js/t2/jquery.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="<?php echo Yii::getAlias('@web') ?>/js/t2/bootstrap.min.js"></script>
     <script src="<?php echo Yii::getAlias('@web') ?>/js/script.js"></script>
     <script src="<?php echo Yii::getAlias('@web') ?>/js/t2/cart-table.js"></script>
+	
+		<!-- Script --> 
+	<script src="<?php echo Yii::getAlias('@web') ?>/js/t1/jquery-1.10.2.js"></script>
+	<script src="<?php echo Yii::getAlias('@web') ?>/js/bootstrap.min.js"></script><!-- Bootstrap --> 
+	<script src="<?php echo Yii::getAlias('@web') ?>/js/modernizr.js"></script><!-- modernizr --> 
+	<script src="<?php echo Yii::getAlias('@web') ?>/js/owl.carousel.min.js"></script><!-- Owl Carousal --> 
+	<script src="<?php echo Yii::getAlias('@web') ?>/js/onscreen.js"></script><!-- On Screen --> 
+	<script src="<?php echo Yii::getAlias('@web') ?>/js/switcher.js"></script><!-- Style Switcher --> 
+
+	<script src="<?php echo Yii::getAlias('@web') ?>/js/daterangepicker.js"></script><!-- Date Range Picker --> 
+	<script src="<?php echo Yii::getAlias('@web') ?>/js/daterangepicker.min.js"></script><!-- Range Slider --> 
+
 </body>
 
 </html>
+<script type="text/javascript">
+$(document).ready(function() {
+	$(".brands").owlCarousel({
+	autoPlay: 3000, //Set AutoPlay to 20 seconds
+	items : 5
+	});
+});
+</script>
