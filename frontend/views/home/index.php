@@ -59,7 +59,7 @@
 							<div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
 							  <div class="best-seller most-sold">
 								<div class="sticker"> <img src="<?php echo Yii::getAlias('@web') ?>/images/t2/new-tag.png"/> </div>
-								<div class="best-seller seller2 sold-thumb"><a href="<?= Yii::$app->urlManager->createUrl(['home/detail', 'id' => $prod->prod_id]) ?>">								
+								<div class="best-seller seller2 sold-thumb"><a href="<?= Yii::$app->urlManager->createUrl(['home/storedetail', 'id' => $prod->prod_id]) ?>">								
 								 <?php if (isset($prod->productImg[0])) { ?>
                                     <img class="seller-still" alt="" src="<?= Yii::$app->urlManager->getBaseUrl() . '/uploads/product/' .$prod->productImg[0]->meta_value ?>" alt="">
                                 <?php } else { ?>
@@ -99,8 +99,7 @@
 <!-- best offer -->
 <div class="col-sm-9 col-lg-9 col-md-9 pull-right row">
 
-<div id="best-offer" class="col-sm-12 col-lg-12 col-md-12 pull-right row carousel slide product-slider container"
-     data-ride="carousel" data-interval="false">
+<div id="best-offer" class="col-sm-12 col-lg-12 col-md-12 pull-right row carousel slide product-slider container" data-ride="carousel" data-interval="false">
     <h4>best offers</h4>
 
     <a class="left carousel-control" href="#best-offer" data-slide="prev">
@@ -113,7 +112,7 @@
     <div class="carousel-inner">
 
         <?php
-        $prod_chunk = array_chunk($product, 3);
+        $prod_chunk = array_chunk($product, 4);
         foreach ($prod_chunk as $key => $products):
             ?>
 
@@ -170,7 +169,7 @@
 </div>
 <!-- END best offer -->
 
-<!-- blogs -->
+<!-- blogs 
 <div id="blogs-section" class="col-sm-12 col-lg-12 col-md-12 pull-right row carousel slide product-slider container"
      data-ride="carousel" data-interval="false">
     <h4>latest from blog</h4>
@@ -302,7 +301,7 @@
 
         </div>
     </div>
-</div>
+</div> -->
 <!-- END blog -->
 </div>
 <!-- end -->
@@ -409,7 +408,23 @@
 
 
 <!-- END best offer -->
-
+           <section id="brands">
+				<div class="fixed-img sec-bg3"></div>
+				<div class="container"> <span><i>OUR</i> BRANDS</span>
+					<div class="brands"> 
+						<a href="#" title=""><img src="<?= Yii::$app->urlManager->getBaseUrl() . '/images/brand1.png'?>" alt="" /></a> 
+						<a href="#" title=""><img src="<?= Yii::$app->urlManager->getBaseUrl() . '/images/brand2.png'?>" alt="" /></a> 
+						<a href="#" title=""><img src="<?= Yii::$app->urlManager->getBaseUrl() . '/images/brand2.png'?>" alt="" /></a> 
+						<a href="#" title=""><img src="<?= Yii::$app->urlManager->getBaseUrl() . '/images/brand3.png'?>" alt="" /></a> 
+						<a href="#" title=""><img src="<?= Yii::$app->urlManager->getBaseUrl() . '/images/brand4.png'?>" alt="" /></a> 
+						<a href="#" title=""><img src="<?= Yii::$app->urlManager->getBaseUrl() . '/images/brand2.png'?>" alt="" /></a> 
+						<a href="#" title=""><img src="<?= Yii::$app->urlManager->getBaseUrl() . '/images/brand4.png'?>" alt="" /></a> 
+						<a href="#" title=""><img src="<?= Yii::$app->urlManager->getBaseUrl() . '/images/brand2.png'?>" alt="" /></a> 
+						<a href="#" title=""><img src="<?= Yii::$app->urlManager->getBaseUrl() . '/images/brand3.png'?>" alt="" /></a> 
+						<a href="#" title=""><img src="<?= Yii::$app->urlManager->getBaseUrl() . '/images/brand4.png'?>" alt="" /></a> 
+					</div>	
+				</div>
+		</section>
 
 </div>
 
@@ -442,5 +457,10 @@ $(document).ready(function() {
 	transitionStyle:"goDown"
 	});	
 }); 
+
+	$(".brands").owlCarousel({
+	autoPlay: 3000, //Set AutoPlay to 20 seconds
+	items : 5
+	});
 
 </script>
