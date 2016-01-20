@@ -221,6 +221,12 @@
         </div>
     </section>
     </div>
+	  <section id="brands">
+    <div class="fixed-img sec-bg3"></div>
+    <div class="container"> <span><i>OUR</i> BRANDS</span>
+      <div class="brands"> <a href="#" title=""><img src="images/brand1.png" alt="" /></a> <a href="#" title=""><img src="images/brand2.png" alt="" /></a> <a href="#" title=""><img src="images/brand3.png" alt="" /></a> <a href="#" title=""><img src="images/brand4.png" alt="" /></a> <a href="#" title=""><img src="images/brand2.png" alt="" /></a> <a href="#" title=""><img src="images/brand4.png" alt="" /></a> <a href="#" title=""><img src="images/brand2.png" alt="" /></a> <a href="#" title=""><img src="images/brand1.png" alt="" /></a> <a href="#" title=""><img src="images/brand3.png" alt="" /></a> <a href="#" title=""><img src="images/brand4.png" alt="" /></a> </div>
+    </div>
+  </section>
     <!-- END customer favourites -->
     <!-- category collection -->
     <!-- END category collection -->
@@ -251,5 +257,9 @@
             pagination: false,
             transitionStyle: "goDown"
         });
+		$(".brands").owlCarousel({
+			autoPlay: 3000, //Set AutoPlay to 20 seconds
+			items : 5
+		});
     });
     </script>
