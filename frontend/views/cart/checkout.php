@@ -1,3 +1,4 @@
+<div class="container header-background">
 <div class="shopping-cart">
 
   <div class="column-labels">
@@ -13,7 +14,11 @@
     <?php foreach($products as $prod): ?>
       <div class="product">
         <div class="product-image">
-          <img src="http://s.cdpn.io/3/dingo-dog-bones.jpg">
+          <?php if (isset($prod->productImg[0])) { ?>
+              <img src="<?= $prod->productImg[0]->meta_value ?>" alt="">
+          <?php } else { ?>
+              <img src="http://placehold.it/280x355" alt="">
+          <?php } ?>
         </div>
         <div class="product-detail">
           <div class="product-title"><?= $prod->prod_name ?></div>
@@ -136,3 +141,4 @@
         </div>
     </div>
 
+</div>
