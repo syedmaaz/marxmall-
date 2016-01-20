@@ -3,14 +3,14 @@
 /* Global "table" column settings */
 .product-image {
   float: left;
-  width: 20%;
+  width: 15%;
 }
 
-/*.product-details {
+.product-detail {
   float: left;
   width: 37%;
 }
-*/
+
 .product-price {
   float: left;
   width: 12%;
