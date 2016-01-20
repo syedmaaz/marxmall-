@@ -77,6 +77,531 @@
                         </div>
                         <?php endforeach; ?>
                 </div>
+					<div class="shop-tabs">
+          <div class="col-md-12 padding-0">
+            <ul class="nav nav-tabs shop-tab" id="myTab">
+              <li class="active"><a data-toggle="tab" href="#tab-photos">WOMEN</a></li>
+              <li class=""><a data-toggle="tab" href="#reviews">NEW STYLE</a></li>
+              <li class="brdr"><a data-toggle="tab" href="#video">FOOTWEAR</a></li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div id="tab-photos" class="tab-pane fade active in">
+                <div class="tab-photos">
+                  <div class="tab-photo-sec">
+                    <div class="tab-photo">
+                      <div id="best-seller-2">
+                        <div class="row">
+                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
+                            <div class="best-seller most-sold">
+                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
+                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
+                              <div class="down">
+                                <h3>LOREM ISPUM</h3>
+                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
+                                <ul class="bag">
+                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
+                                </ul>
+                              </div>
+                              <img src="images/border.jpg"  class="border"/> </div>
+                          </div>
+                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
+                            <div class="best-seller most-sold">
+                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
+                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
+                              <div class="down">
+                                <h3>LOREM ISPUM</h3>
+                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
+                                <ul class="bag">
+                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
+                                </ul>
+                              </div>
+                              <img src="images/border.jpg"  class="border"/> </div>
+                          </div>
+                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
+                            <div class="best-seller most-sold">
+                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
+                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
+                              <div class="down">
+                                <h3>LOREM ISPUM</h3>
+                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
+                                <ul class="bag">
+                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
+                                </ul>
+                              </div>
+                              <img src="images/border.jpg"  class="border"/> </div>
+                          </div>
+                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
+                            <div class="best-seller most-sold">
+                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
+                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
+                              <div class="down">
+                                <h3>LOREM ISPUM</h3>
+                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
+                                <ul class="bag">
+                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
+                                </ul>
+                              </div>
+                              <img src="images/border.jpg"  class="border"/> </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
+                            <div class="best-seller most-sold">
+                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
+                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
+                              <div class="down">
+                                <h3>LOREM ISPUM</h3>
+                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
+                                <ul class="bag">
+                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
+                                </ul>
+                              </div>
+                              <img src="images/border.jpg"  class="border"/> </div>
+                          </div>
+                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
+                            <div class="best-seller most-sold">
+                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
+                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
+                              <div class="down">
+                                <h3>LOREM ISPUM</h3>
+                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
+                                <ul class="bag">
+                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
+                                </ul>
+                              </div>
+                              <img src="images/border.jpg"  class="border"/> </div>
+                          </div>
+                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
+                            <div class="best-seller most-sold">
+                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
+                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
+                              <div class="down">
+                                <h3>LOREM ISPUM</h3>
+                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
+                                <ul class="bag">
+                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
+                                </ul>
+                              </div>
+                              <img src="images/border.jpg"  class="border"/> </div>
+                          </div>
+                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
+                            <div class="best-seller most-sold">
+                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
+                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
+                              <div class="down">
+                                <h3>LOREM ISPUM</h3>
+                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
+                                <ul class="bag">
+                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
+                                </ul>
+                              </div>
+                              <img src="images/border.jpg"  class="border"/> </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
+                            <div class="best-seller most-sold">
+                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
+                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
+                              <div class="down">
+                                <h3>LOREM ISPUM</h3>
+                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
+                                <ul class="bag">
+                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
+                                </ul>
+                              </div>
+                              <img src="images/border.jpg"  class="border"/> </div>
+                          </div>
+                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
+                            <div class="best-seller most-sold">
+                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
+                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
+                              <div class="down">
+                                <h3>LOREM ISPUM</h3>
+                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
+                                <ul class="bag">
+                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
+                                </ul>
+                              </div>
+                              <img src="images/border.jpg"  class="border"/> </div>
+                          </div>
+                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
+                            <div class="best-seller most-sold">
+                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
+                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
+                              <div class="down">
+                                <h3>LOREM ISPUM</h3>
+                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
+                                <ul class="bag">
+                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
+                                </ul>
+                              </div>
+                              <img src="images/border.jpg"  class="border"/> </div>
+                          </div>
+                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
+                            <div class="best-seller most-sold">
+                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
+                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
+                              <div class="down">
+                                <h3>LOREM ISPUM</h3>
+                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
+                                <ul class="bag">
+                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
+                                </ul>
+                              </div>
+                              <img src="images/border.jpg"  class="border"/> </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="reviews" class="tab-pane fade">
+                <div class="tab-reveiws">
+                  <div class="fixed-img sec-bg2"></div>
+                  <div id="best-seller-3">
+                    <div class="row">
+                      <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
+                        <div class="best-seller most-sold">
+                          <div class="sticker"> <img src="images/sticker.jpg" /> </div>
+                          <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
+                          <div class="down">
+                            <h3>LOREM ISPUM</h3>
+                            <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
+                            <ul class="bag">
+                              <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
+                            </ul>
+                          </div>
+                          <img src="images/border.jpg"  class="border"/> </div>
+                      </div>
+                      <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
+                        <div class="best-seller most-sold">
+                          <div class="sticker"> <img src="images/sticker.jpg" /> </div>
+                          <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
+                          <div class="down">
+                            <h3>LOREM ISPUM</h3>
+                            <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
+                            <ul class="bag">
+                              <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
+                            </ul>
+                          </div>
+                          <img src="images/border.jpg"  class="border"/> </div>
+                      </div>
+                      <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
+                        <div class="best-seller most-sold">
+                          <div class="sticker"> <img src="images/sticker.jpg" /> </div>
+                          <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
+                          <div class="down">
+                            <h3>LOREM ISPUM</h3>
+                            <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
+                            <ul class="bag">
+                              <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
+                            </ul>
+                          </div>
+                          <img src="images/border.jpg"  class="border"/> </div>
+                      </div>
+                      <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
+                        <div class="best-seller most-sold">
+                          <div class="sticker"> <img src="images/sticker.jpg" /> </div>
+                          <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
+                          <div class="down">
+                            <h3>LOREM ISPUM</h3>
+                            <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
+                            <ul class="bag">
+                              <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
+                            </ul>
+                          </div>
+                          <img src="images/border.jpg"  class="border"/> </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
+                        <div class="best-seller most-sold">
+                          <div class="sticker"> <img src="images/sticker.jpg" /> </div>
+                          <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
+                          <div class="down">
+                            <h3>LOREM ISPUM</h3>
+                            <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
+                            <ul class="bag">
+                              <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
+                            </ul>
+                          </div>
+                          <img src="images/border.jpg"  class="border"/> </div>
+                      </div>
+                      <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
+                        <div class="best-seller most-sold">
+                          <div class="sticker"> <img src="images/sticker.jpg" /> </div>
+                          <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
+                          <div class="down">
+                            <h3>LOREM ISPUM</h3>
+                            <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
+                            <ul class="bag">
+                              <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
+                            </ul>
+                          </div>
+                          <img src="images/border.jpg"  class="border"/> </div>
+                      </div>
+                      <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
+                        <div class="best-seller most-sold">
+                          <div class="sticker"> <img src="images/sticker.jpg" /> </div>
+                          <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
+                          <div class="down">
+                            <h3>LOREM ISPUM</h3>
+                            <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
+                            <ul class="bag">
+                              <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
+                            </ul>
+                          </div>
+                          <img src="images/border.jpg"  class="border"/> </div>
+                      </div>
+                      <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
+                        <div class="best-seller most-sold">
+                          <div class="sticker"> <img src="images/sticker.jpg" /> </div>
+                          <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
+                          <div class="down">
+                            <h3>LOREM ISPUM</h3>
+                            <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
+                            <ul class="bag">
+                              <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
+                            </ul>
+                          </div>
+                          <img src="images/border.jpg"  class="border"/> </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
+                        <div class="best-seller most-sold">
+                          <div class="sticker"> <img src="images/sticker.jpg" /> </div>
+                          <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
+                          <div class="down">
+                            <h3>LOREM ISPUM</h3>
+                            <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
+                            <ul class="bag">
+                              <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
+                            </ul>
+                          </div>
+                          <img src="images/border.jpg"  class="border"/> </div>
+                      </div>
+                      <div class="cat1 cat3 col-lg-3  col-md-3 col-sm-12 inner-products ">
+                        <div class="best-seller most-sold">
+                          <div class="sticker"> <img src="images/sticker.jpg" /> </div>
+                          <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
+                          <div class="down">
+                            <h3>LOREM ISPUM</h3>
+                            <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
+                            <ul class="bag">
+                              <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
+                            </ul>
+                          </div>
+                          <img src="images/border.jpg"  class="border"/> </div>
+                      </div>
+                      <div class="cat1 cat3 col-lg-3  col-md-3 col-sm-12 inner-products ">
+                        <div class="best-seller most-sold">
+                          <div class="sticker"> <img src="images/sticker.jpg" /> </div>
+                          <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
+                          <div class="down">
+                            <h3>LOREM ISPUM</h3>
+                            <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
+                            <ul class="bag">
+                              <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
+                            </ul>
+                          </div>
+                          <img src="images/border.jpg"  class="border"/> </div>
+                      </div>
+                      <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
+                        <div class="best-seller most-sold">
+                          <div class="sticker"> <img src="images/sticker.jpg" /> </div>
+                          <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
+                          <div class="down">
+                            <h3>LOREM ISPUM</h3>
+                            <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
+                            <ul class="bag">
+                              <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
+                            </ul>
+                          </div>
+                          <img src="images/border.jpg"  class="border"/> </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="video" class="tab-pane fade">
+                <div class="tab-video">
+                  <div id="#video" class="tab-pane fade">
+                    <div class="tab-video">
+                      <div class="fixed-img sec-bg2"></div>
+                      <div id="best-seller-4">
+                        <div class="row">
+                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
+                            <div class="best-seller most-sold">
+                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
+                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
+                              <div class="down">
+                                <h3>LOREM ISPUM</h3>
+                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
+                                <ul class="bag">
+                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
+                                </ul>
+                              </div>
+                              <img src="images/border.jpg"  class="border"/> </div>
+                          </div>
+                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
+                            <div class="best-seller most-sold">
+                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
+                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
+                              <div class="down">
+                                <h3>LOREM ISPUM</h3>
+                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
+                                <ul class="bag">
+                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
+                                </ul>
+                              </div>
+                              <img src="images/border.jpg"  class="border"/> </div>
+                          </div>
+                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
+                            <div class="best-seller most-sold">
+                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
+                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
+                              <div class="down">
+                                <h3>LOREM ISPUM</h3>
+                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
+                                <ul class="bag">
+                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
+                                </ul>
+                              </div>
+                              <img src="images/border.jpg"  class="border"/> </div>
+                          </div>
+                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
+                            <div class="best-seller most-sold">
+                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
+                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
+                              <div class="down">
+                                <h3>LOREM ISPUM</h3>
+                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
+                                <ul class="bag">
+                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
+                                </ul>
+                              </div>
+                              <img src="images/border.jpg"  class="border"/> </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
+                            <div class="best-seller most-sold">
+                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
+                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
+                              <div class="down">
+                                <h3>LOREM ISPUM</h3>
+                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
+                                <ul class="bag">
+                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
+                                </ul>
+                              </div>
+                              <img src="images/border.jpg"  class="border"/> </div>
+                          </div>
+                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
+                            <div class="best-seller most-sold">
+                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
+                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
+                              <div class="down">
+                                <h3>LOREM ISPUM</h3>
+                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
+                                <ul class="bag">
+                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
+                                </ul>
+                              </div>
+                              <img src="images/border.jpg"  class="border"/> </div>
+                          </div>
+                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
+                            <div class="best-seller most-sold">
+                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
+                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
+                              <div class="down">
+                                <h3>LOREM ISPUM</h3>
+                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
+                                <ul class="bag">
+                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
+                                </ul>
+                              </div>
+                              <img src="images/border.jpg"  class="border"/> </div>
+                          </div>
+                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
+                            <div class="best-seller most-sold">
+                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
+                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
+                              <div class="down">
+                                <h3>LOREM ISPUM</h3>
+                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
+                                <ul class="bag">
+                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
+                                </ul>
+                              </div>
+                              <img src="images/border.jpg"  class="border"/> </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
+                            <div class="best-seller most-sold">
+                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
+                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
+                              <div class="down">
+                                <h3>LOREM ISPUM</h3>
+                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
+                                <ul class="bag">
+                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
+                                </ul>
+                              </div>
+                              <img src="images/border.jpg"  class="border"/> </div>
+                          </div>
+                          <div class="cat1 cat3 col-lg-3  col-md-3 col-sm-12 inner-products ">
+                            <div class="best-seller most-sold">
+                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
+                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
+                              <div class="down">
+                                <h3>LOREM ISPUM</h3>
+                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
+                                <ul class="bag">
+                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
+                                </ul>
+                              </div>
+                              <img src="images/border.jpg"  class="border"/> </div>
+                          </div>
+                          <div class="cat1 cat3 col-lg-3  col-md-3 col-sm-12 inner-products ">
+                            <div class="best-seller most-sold">
+                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
+                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
+                              <div class="down">
+                                <h3>LOREM ISPUM</h3>
+                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
+                                <ul class="bag">
+                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
+                                </ul>
+                              </div>
+                              <img src="images/border.jpg"  class="border"/> </div>
+                          </div>
+                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
+                            <div class="best-seller most-sold">
+                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
+                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
+                              <div class="down">
+                                <h3>LOREM ISPUM</h3>
+                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
+                                <ul class="bag">
+                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
+                                </ul>
+                              </div>
+                              <img src="images/border.jpg"  class="border"/> </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
             </div>
             <div class="col-sm-12 col-lg-12 col-md-12 pull-right row ads">
                 <img src="<?php echo Yii::getAlias('@web') ?>/images/t2/ad.png" alt="" width="100%" />
