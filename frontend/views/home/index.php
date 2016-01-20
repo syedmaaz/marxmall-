@@ -36,8 +36,7 @@
             <div class="tp-caption skewfromleft" data-x="650" data-y="224" data-speed="2000" data-start="800" data-easing="Back.easeOut" data-endspeed="500" data-captionhidden="on" style="font-size:40px; z-index: 4"><span class="slide2-text2">More then branding agency</span></div>
             <div class="tp-caption skewfromright" data-x="650" data-y="294" data-speed="2000" data-start="800" data-easing="Back.easeOut" data-endspeed="500" data-captionhidden="on" style="font-size:40px; z-index: 4; font-size:30px;"><span class="slide2-text1">More then branding</span></div>
           </li>
-          <!-- SLIDE 3  -->
-          
+          <!-- SLIDE 3  -->         
         </ul>
       </div>
     </div>
@@ -79,8 +78,7 @@
 				<?php endforeach; ?>
 						</div>
 			<?php endforeach; ?>					     	
-          </div>
-	
+          </div>	
           </div>
         </div>
 	</section>
