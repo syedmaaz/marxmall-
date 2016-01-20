@@ -756,6 +756,11 @@
     <!-- category collection -->
     <!-- END category collection -->
     <!-- best offer -->
+	<style>
+	li {
+    padding: 13px 30px;
+}
+	</style>
     <script type="text/javascript">
     $(document).ready(function() {
         var revapi;
