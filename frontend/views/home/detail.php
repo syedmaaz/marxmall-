@@ -312,3 +312,134 @@ use common\models\ProductMeta;
     </div>
     <img src="images/ad.png" width="100%" alt=""/>
 </div> -->
+<script type="text/javascript">
+
+	$(document).ready(function() {
+
+	
+	$(".footer-deal").owlCarousel({
+	autoPlay :true,
+	stopOnHover : true,
+	goToFirstSpeed : 2000,
+	slideSpeed:1500,
+	singleItem : true,
+	autoHeight : true,
+	transitionStyle:"goDown",
+	paginationNumbers:true
+	});	
+
+	$("#tab-recent").owlCarousel({
+	autoPlay :true,
+	stopOnHover : true,
+	navigation:true,
+	goToFirstSpeed : 2000,
+	slideSpeed:1500,
+	singleItem : true,
+	autoHeight : true,
+	pagination:false,
+	transitionStyle:"goDown"
+	});
+
+	$("#tab-popular").owlCarousel({
+	autoPlay :true,
+	stopOnHover : true,
+	navigation:true,
+	goToFirstSpeed : 2000,
+	slideSpeed:1500,
+	singleItem : true,
+	autoHeight : true,
+	pagination:false,
+	transitionStyle:"goDown"
+	});
+	
+	
+	$(".brands").owlCarousel({
+	autoPlay: 3000, //Set AutoPlay to 20 seconds
+	items : 5
+	});
+		$("#best-seller").owlCarousel({
+	autoPlay :true,
+	stopOnHover : true,
+	navigation:true,
+	goToFirstSpeed : 2000,
+	slideSpeed:1500,
+	singleItem : true,
+	autoHeight : true,
+	pagination:false,
+	transitionStyle:"goDown"
+	});
+	
+			$("#best-seller-2").owlCarousel({
+	autoPlay :true,
+	stopOnHover : true,
+	navigation:true,
+	goToFirstSpeed : 2000,
+	slideSpeed:1500,
+	singleItem : true,
+	autoHeight : true,
+	pagination:false,
+	transitionStyle:"goDown"
+	});
+			$("#best-seller-3").owlCarousel({
+	autoPlay :true,
+	stopOnHover : true,
+	navigation:true,
+	goToFirstSpeed : 2000,
+	slideSpeed:1500,
+	singleItem : true,
+	autoHeight : true,
+	pagination:false,
+	transitionStyle:"goDown"
+	});
+			$("#best-seller-4").owlCarousel({
+	autoPlay :true,
+	stopOnHover : true,
+	navigation:true,
+	goToFirstSpeed : 2000,
+	slideSpeed:1500,
+	singleItem : true,
+	autoHeight : true,
+	pagination:false,
+	transitionStyle:"goDown"
+	});
+				$("#best-seller-5").owlCarousel({
+	autoPlay :true,
+	stopOnHover : true,
+	navigation:true,
+	goToFirstSpeed : 2000,
+	slideSpeed:1500,
+	singleItem : true,
+	autoHeight : true,
+	pagination:false,
+	transitionStyle:"goDown"
+	});
+	
+	
+	$("#shop-testimonial").owlCarousel({
+	autoPlay: 2000, //Set AutoPlay to 20 seconds
+	items : 1,
+	itemsDesktop : [1199,1],
+	itemsDesktopSmall : [979,1],
+	itemsTablet :	[768,1] ,
+	itemsMobile :	[479,1],
+	pagination:true,
+	stopOnHover : true,
+	transitionStyle:"goDown",
+	paginationNumbers:false,
+	autoPlay :true
+	
+	});
+	$('.grid-btn > a').click(function() {
+		$('.list-btn > a').removeClass("active");
+		$(this).addClass("active");
+		$(".people-list").removeClass("list-view");
+		$(".people-list").addClass("grid-view");
+	});
+	$('.list-btn > a').click(function() {
+		$('.grid-btn > a').removeClass("active");
+		$(this).addClass("active");
+		$(".people-list").addClass("list-view");
+		$(".people-list").removeClass("grid-view");
+	});
+});
+</script>
