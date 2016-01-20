@@ -14,12 +14,6 @@ Event::on(View::className(), View::EVENT_BEFORE_RENDER, function() {
 
     $data= $query->select('store_id,store_name')->from('store')->all();
 
-    // $query2 = new Query;
-
-    // $data2= $query2->select('name,menu_id')
-    // ->from('submenu')->all(); 
-
-    // Yii::$app->view->params['data'] = $data;
     Yii::$app->view->params['store_menu'] = $data;
 
 });
