@@ -354,22 +354,10 @@
 
 <script type="text/javascript">
 $(document).ready(function() {	 
-	$(".brand").owlCarousel({
+	$(".brands").owlCarousel({
 	autoPlay: 3000, //Set AutoPlay to 20 seconds
 	items : 5
 	});
-	
-	
-   $(".footer-deal").owlCarousel({
-	autoPlay :true,
-	stopOnHover : true,
-	goToFirstSpeed : 2000,
-	slideSpeed:1500,
-	singleItem : true,
-	autoHeight : true,
-	transitionStyle:"goDown",
-	paginationNumbers:true
-	});	
 
 });
 </script>
