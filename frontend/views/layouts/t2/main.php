@@ -103,7 +103,11 @@
                 <div class="container">
                     <div class="col-lg-12 header-background">
                         <div class="col-lg-7 col-md-3 col-sm-12 col-xs-12">
-                            <div class="logo"> <a href="../home" title=""> <img src="<?= Yii::$app->urlManager->getBaseUrl() . '/images/logo.jpg'?>" alt="" /> </a> </div>
+                            <div class="logo"> 
+                              <a href="<?= Yii::$app->urlManager->createUrl('home/index') ?>" title=""> 
+                                <img src="<?= Yii::$app->urlManager->getBaseUrl() . '/images/logo.jpg'?>" alt="" /> 
+                              </a> 
+                            </div>
                         </div>
                         <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12 info ">
                             <h3 class="pull-right">NEED IT BY 12/24 ?</h3>
