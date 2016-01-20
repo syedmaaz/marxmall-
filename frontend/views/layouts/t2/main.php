@@ -23,7 +23,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800|Raleway:400,300,600,700,500|Noto+Sans:400,700|Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
 	
   <!-- Bootstrap -->
-	<link rel="stylesheet" href="<?php echo Yii::getAlias('@web') ?>/css/font-awesome.css" type="text/css" />
+	<link rel="stylesheet" href="<?php echo Yii::getAlias('@web') ?>/css/font-awesome/css/font-awesome.css" type="text/css" />
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="<?php echo Yii::getAlias('@web') ?>/css/t1/owl.carousel.css" type="text/css" />
 	<!-- Owl Carousal -->
@@ -94,7 +94,7 @@
         <div class="col-lg-2">
           <div class="top-bar">
             <ul class=" language list-inline margin-9">
-              <li><a href="cart-1.html" title=""><i class="fa fa-shopping-cart"></i><span>CART:O Item</span></a></li>
+              <li><a href="../cart/index" title=""><i class="fa fa-shopping-cart"></i><span>CART:O Item</span></a></li>
             </ul>
           </div>
         </div>		  
@@ -108,7 +108,7 @@
       <div class="container">
         <div class="col-lg-12 header-background">
           <div class="col-lg-7 col-md-3 col-sm-12 col-xs-12">
-            <div class="logo"> <a href="./index.html" title=""> <img src="<?= Yii::$app->urlManager->getBaseUrl() . '/images/logo.jpg'?>" alt="" /> </a> </div>
+            <div class="logo"> <a href="../home" title=""> <img src="<?= Yii::$app->urlManager->getBaseUrl() . '/images/logo.jpg'?>" alt="" /> </a> </div>
           </div>
           <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12 info ">
             <h3 class="pull-right">NEED IT BY 12/24 ?</h3>
@@ -227,28 +227,13 @@
         </header>
         <!-- Page Content -->
         <div class="theme-layout">
+
                 <!-- content -->
                 <?= $content ?>
         </div>
         <!-- /.container -->
             <!-- Footer -->
-           <section id="brands">
-				<div class="fixed-img sec-bg3"></div>
-				<div class="container"> <span><i>OUR</i> BRANDS</span>
-					<div class="brands"> 
-						<a href="#" title=""><img src="<?= Yii::$app->urlManager->getBaseUrl() . '/images/brand1.png'?>" alt="" /></a> 
-						<a href="#" title=""><img src="<?= Yii::$app->urlManager->getBaseUrl() . '/images/brand2.png'?>" alt="" /></a> 
-						<a href="#" title=""><img src="<?= Yii::$app->urlManager->getBaseUrl() . '/images/brand2.png'?>" alt="" /></a> 
-						<a href="#" title=""><img src="<?= Yii::$app->urlManager->getBaseUrl() . '/images/brand3.png'?>" alt="" /></a> 
-						<a href="#" title=""><img src="<?= Yii::$app->urlManager->getBaseUrl() . '/images/brand4.png'?>" alt="" /></a> 
-						<a href="#" title=""><img src="<?= Yii::$app->urlManager->getBaseUrl() . '/images/brand2.png'?>" alt="" /></a> 
-						<a href="#" title=""><img src="<?= Yii::$app->urlManager->getBaseUrl() . '/images/brand4.png'?>" alt="" /></a> 
-						<a href="#" title=""><img src="<?= Yii::$app->urlManager->getBaseUrl() . '/images/brand2.png'?>" alt="" /></a> 
-						<a href="#" title=""><img src="<?= Yii::$app->urlManager->getBaseUrl() . '/images/brand3.png'?>" alt="" /></a> 
-						<a href="#" title=""><img src="<?= Yii::$app->urlManager->getBaseUrl() . '/images/brand4.png'?>" alt="" /></a> 
-					</div>	
-				</div>
-		</section>
+
   <footer class="block">
     <div class="row">
       <div class="container">
@@ -281,7 +266,7 @@
               <ul>
                 <li><a href="#" title=""><img src="<?= Yii::$app->urlManager->getBaseUrl().'/images/payment1.png'?>" alt=""></a></li>
                 <li><a href="#" title=""><img src="<?= Yii::$app->urlManager->getBaseUrl().'/images/payment3.png'?>" alt=""></a></li>
-                <li><a href="#" title=""><img src="<?= Yii::$app->urlManager->getBaseUrl().'/images/payment4.png'?> alt=""></a></li>
+                <li><a href="#" title=""><img src="<?= Yii::$app->urlManager->getBaseUrl().'/images/payment4.png'?>" alt=""></a></li>
                 <li><a href="#" title=""><img src="<?= Yii::$app->urlManager->getBaseUrl().'/images/payment5.png'?>" alt=""></a></li>
               </ul>
             </div>
@@ -352,12 +337,3 @@
 
 </html>
 
-<script type="text/javascript">
-$(document).ready(function() {	 
-	$(".brands").owlCarousel({
-	autoPlay: 3000, //Set AutoPlay to 20 seconds
-	items : 5
-	});
-
-});
-</script>
