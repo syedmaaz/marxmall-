@@ -11,52 +11,55 @@
     <!-- Bootstrap Core CSS -->
     <link href="<?php echo Yii::getAlias('@web') ?>/css/t2/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="<?php echo Yii::getAlias('@web') ?>/css/font-awesome/css/font-awesome.css" type="text/css" />
+   
     <link href="<?php echo Yii::getAlias('@web') ?>/css/t2/style.css" rel="stylesheet">
     <link href="<?php echo Yii::getAlias('@web') ?>/css/style.css" rel="stylesheet">
     <link href="<?php echo Yii::getAlias('@web') ?>/css/t2/checkout.css" rel="stylesheet">
 	
+	    <script src="<?php echo Yii::getAlias('@web') ?>/js/t2/jquery.js"></script>
+	<script src="<?php echo Yii::getAlias('@web') ?>/js/t1/owl.carousel.min.js"></script><!-- Owl Carousal --> 
+	
+	<script src="<?php echo Yii::getAlias('@web') ?>/js/t1/daterangepicker.js"></script><!-- Date Range Picker --> 
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800|Raleway:400,300,600,700,500|Noto+Sans:400,700|Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
 	
-	<link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css" />
-	<!-- Bootstrap -->
-	<link rel="stylesheet" href="./font-awesome-4.0.3/css/font-awesome.css" type="text/css" />
+  <!-- Bootstrap -->
+	<link rel="stylesheet" href="<?php echo Yii::getAlias('@web') ?>/css/font-awesome.css" type="text/css" />
 	<!-- Font Awesome -->
-	<link rel="stylesheet" href="./css/owl.carousel.css" type="text/css" />
+	<link rel="stylesheet" href="<?php echo Yii::getAlias('@web') ?>/css/t1/owl.carousel.css" type="text/css" />
 	<!-- Owl Carousal -->
-	<link rel="stylesheet" href="./css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="<?php echo Yii::getAlias('@web') ?>/css/t1/animate.css" type="text/css" />
 	<!-- Animation -->
 
-	<link rel="stylesheet" href="./css/ion.rangeSlider.css" />
+	<link rel="stylesheet" href="<?php echo Yii::getAlias('@web') ?>/css/t1/ion.rangeSlider.css" />
 	<!-- Range Slider -->
-	<link rel="stylesheet" href="./css/ion.rangeSlider.skinFlat.css" />
+	<link rel="stylesheet" href="<?php echo Yii::getAlias('@web') ?>/css/t1/ion.rangeSlider.skinFlat.css" />
 	<!-- Range Slider -->
 
-	<link rel="stylesheet" href="./css/style.css" type="text/css" />
+	<link rel="stylesheet" href="<?php echo Yii::getAlias('@web') ?>/css/t1/style.css" type="text/css" />
 	<!-- Style -->
-	<link rel="stylesheet" href="./css/responsive.css" type="text/css" />
+	<link rel="stylesheet" href="<?php echo Yii::getAlias('@web') ?>/css/t1/responsive.css" type="text/css" />
 	<!-- Responsive -->
-	<link rel="stylesheet" type="text/css" href="./css/revolution.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="<?php echo Yii::getAlias('@web') ?>/css/t1/revolution.css" media="screen" />
 	<!-- Slider Revolution -->
-	<link rel="alternate stylesheet " type="text/css" href="./css/purple.css" title="purple" />
+	<link rel="alternate stylesheet " type="text/css" href="<?php echo Yii::getAlias('@web') ?>/css/t1/purple.css" title="purple" />
 	<!-- Purple -->
-	<link rel="alternate stylesheet" type="text/css" href="./css/green.css" title="green" />
+	<link rel="alternate stylesheet" type="text/css" href="<?php echo Yii::getAlias('@web') ?>/css/t1/green.css" title="green" />
 	<!-- Green -->
-	<link rel="alternate stylesheet" type="text/css" href="./css/orange.css" title="orange" />
+	<link rel="alternate stylesheet" type="text/css" href="<?php echo Yii::getAlias('@web') ?>/css/t1/orange.css" title="orange" />
 	<!-- Orange -->
-	<link rel="alternate stylesheet" type="text/css" href="./css/cyan.css" title="cyan" />
+	<link rel="alternate stylesheet" type="text/css" href="<?php echo Yii::getAlias('@web') ?>/css/t1/cyan.css" title="cyan" />
 	<!-- Cyan -->
-	<link rel="alternate stylesheet" type="text/css" href="./css/red.css" title="red" />
+	<link rel="alternate stylesheet" type="text/css" href="<?php echo Yii::getAlias('@web') ?>/css/t1/red.css" title="red" />
 	<!-- Red -->
-	<link rel="alternate stylesheet" type="text/css" href="./css/black.css" title="black" />
+	<link rel="alternate stylesheet" type="text/css" href="<?php echo Yii::getAlias('@web') ?>/css/t1/black.css" title="black" />
 	<!-- Black -->
-	<link rel="alternate stylesheet" type="text/css" href="./css/pink.css" title="pink" />
+	<link rel="alternate stylesheet" type="text/css" href="<?php echo Yii::getAlias('@web') ?>/css/t1/pink.css" title="pink" />
 	<!-- Pink -->
-	<link rel="alternate stylesheet" type="text/css" href="./css/gray.css" title="gray" />
+	<link rel="alternate stylesheet" type="text/css" href="<?php echo Yii::getAlias('@web') ?>/css/t1/gray.css" title="gray" />
 	<!-- Gray -->
-	<link rel="alternate stylesheet" type="text/css" href="./css/grunge.css" title="grunge" />
+	<link rel="alternate stylesheet" type="text/css" href="<?php echo Yii::getAlias('@web') ?>/css/t1/grunge.css" title="grunge" />
 	<!-- Grunge -->
-	<link rel="alternate stylesheet" type="text/css" href="./css/brown.css" title="brown" />
+	<link rel="alternate stylesheet" type="text/css" href="<?php echo Yii::getAlias('@web') ?>/css/t1/brown.css" title="brown" />
 	<!-- Brown -->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -64,6 +67,10 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+	
+	<!-- SLIDER REVOLUTION --> 
+	<script type="text/javascript" src="<?php echo Yii::getAlias('@web') ?>/js/t1/jquery.themepunch.plugins.min.js"></script> 
+	<script type="text/javascript" src="<?php echo Yii::getAlias('@web') ?>/js/t1/jquery.themepunch.revolution.min.js"></script> 
 </head>
 
 <body>
@@ -219,11 +226,9 @@
             </div>
         </header>
         <!-- Page Content -->
-        <div class="container">
-            <div class="row">
+        <div class="theme-layout">
                 <!-- content -->
                 <?= $content ?>
-            </div>
         </div>
         <!-- /.container -->
             <!-- Footer -->
@@ -276,7 +281,7 @@
               <ul>
                 <li><a href="#" title=""><img src="<?= Yii::$app->urlManager->getBaseUrl().'/images/payment1.png'?>" alt=""></a></li>
                 <li><a href="#" title=""><img src="<?= Yii::$app->urlManager->getBaseUrl().'/images/payment3.png'?>" alt=""></a></li>
-                <li><a href="#" title=""><img src="./images/payment4.png" alt=""></a></li>
+                <li><a href="#" title=""><img src="<?= Yii::$app->urlManager->getBaseUrl().'/images/payment4.png'?> alt=""></a></li>
                 <li><a href="#" title=""><img src="<?= Yii::$app->urlManager->getBaseUrl().'/images/payment5.png'?>" alt=""></a></li>
               </ul>
             </div>
@@ -327,33 +332,44 @@
             <input type="hidden" name="_csrf" value="<?=Yii::$app->request->getCsrfToken()?>" />
             <input id="baseUrl" type="hidden" name="baseUrl" value="<?= Yii::$app->urlManager->getBaseUrl() ?>" />
         <!-- /.container -->
-    </di-v>
+    </div>
     <!-- jQuery -->
-    <script src="<?php echo Yii::getAlias('@web') ?>/js/t2/jquery.js"></script>
+
+
     <!-- Bootstrap Core JavaScript -->
     <script src="<?php echo Yii::getAlias('@web') ?>/js/t2/bootstrap.min.js"></script>
     <script src="<?php echo Yii::getAlias('@web') ?>/js/script.js"></script>
     <script src="<?php echo Yii::getAlias('@web') ?>/js/t2/cart-table.js"></script>
 	
-		<!-- Script --> 
-	<script src="<?php echo Yii::getAlias('@web') ?>/js/t1/jquery-1.10.2.js"></script>
-	<script src="<?php echo Yii::getAlias('@web') ?>/js/bootstrap.min.js"></script><!-- Bootstrap --> 
-	<script src="<?php echo Yii::getAlias('@web') ?>/js/modernizr.js"></script><!-- modernizr --> 
-	<script src="<?php echo Yii::getAlias('@web') ?>/js/owl.carousel.min.js"></script><!-- Owl Carousal --> 
-	<script src="<?php echo Yii::getAlias('@web') ?>/js/onscreen.js"></script><!-- On Screen --> 
-	<script src="<?php echo Yii::getAlias('@web') ?>/js/switcher.js"></script><!-- Style Switcher --> 
+		<!-- Script
+	<script src="<?php echo Yii::getAlias('@web') ?>/js/t1/jquery-1.10.2.js"></script>  --> 
+	<script src="<?php echo Yii::getAlias('@web') ?>/js/t1/modernizr.js"></script><!-- modernizr --> 
+	<script src="<?php echo Yii::getAlias('@web') ?>/js/t1/onscreen.js"></script><!-- On Screen --> 
+	<script src="<?php echo Yii::getAlias('@web') ?>/js/t1/switcher.js"></script><!-- Style Switcher --> 
 
-	<script src="<?php echo Yii::getAlias('@web') ?>/js/daterangepicker.js"></script><!-- Date Range Picker --> 
-	<script src="<?php echo Yii::getAlias('@web') ?>/js/daterangepicker.min.js"></script><!-- Range Slider --> 
 
 </body>
 
 </html>
+
 <script type="text/javascript">
-$(document).ready(function() {
-	$(".brands").owlCarousel({
+$(document).ready(function() {	 
+	$(".brand").owlCarousel({
 	autoPlay: 3000, //Set AutoPlay to 20 seconds
 	items : 5
 	});
+	
+	
+   $(".footer-deal").owlCarousel({
+	autoPlay :true,
+	stopOnHover : true,
+	goToFirstSpeed : 2000,
+	slideSpeed:1500,
+	singleItem : true,
+	autoHeight : true,
+	transitionStyle:"goDown",
+	paginationNumbers:true
+	});	
+
 });
 </script>

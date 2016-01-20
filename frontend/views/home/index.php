@@ -1,7 +1,49 @@
-
 <div class="col-md-12">
-
+  <div class="container header-background">
+    <div class="tp-banner-container">
+      <div class="tp-banner">
+        <ul>
+          <li data-transition="3dcurtain-vertical" data-slotamount="7" data-masterspeed="500"> <img src="<?php echo Yii::getAlias('@web') ?>/images/slide4.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat" />
+            <div class="tp-caption lfl" data-x="-20" data-y="12" data-speed="2000" data-start="800" data-easing="Back.easeOut" data-endspeed="500" data-captionhidden="on" style="font-size:40px; z-index: 4"><span><img src="<?php echo Yii::getAlias('@web') ?>/images/boy.png" alt="" /></span></div>
+            <div class="tp-caption lfr" data-x="290" data-y="12" data-speed="2000" data-start="800" data-easing="Back.easeOut" data-endspeed="500" data-captionhidden="on" style="font-size:40px; z-index: 4"><span><img style="z-index:0;" src="<?php echo Yii::getAlias('@web') ?>/images/girl1.png" alt="" /></span></div>
+            <div class="tp-caption lfb" data-x="150" data-y="12" data-speed="2000" data-start="800" data-easing="Back.easeOut" data-endspeed="500" data-captionhidden="on" style="font-size:40px; z-index: 4"><span><img src="<?php echo Yii::getAlias('@web') ?>/images/girl2.png" alt="" /></span></div>
+            <div class="tp-caption lft" data-x="640" data-y="230" data-speed="2000" data-start="800" data-easing="Back.easeOut" data-endspeed="500" data-captionhidden="on" style="font-size:40px; z-index: 4"><span><img src="<?php echo Yii::getAlias('@web') ?>/images/box1.png" alt="" /></span></div>
+            <div class="tp-caption lfb" data-x="1045" data-y="400" data-speed="2000" data-start="800" data-easing="Back.easeOut" data-endspeed="500" data-captionhidden="on" style="font-size:40px; z-index: 4"><span><img src="<?php echo Yii::getAlias('@web') ?>/images/box2.png" alt="" /></span></div>
+            <div class="tp-caption skewfromright" data-x="670" data-y="205" data-speed="2000" data-start="800" data-easing="Back.easeOut" data-endspeed="500" data-captionhidden="on" style="">
+              <h2 class="slide4-text1">More then <i>branding</i> agancy</h2>
+            </div>
+            <div class="tp-caption skewfromleft" data-x="670" data-y="250" data-speed="2000" data-start="800" data-easing="Back.easeOut" data-endspeed="500" data-captionhidden="on" style="z-index:8;">
+              <h2 class="slide4-text2">Discover more about store Advanced Technology</h2>
+            </div>
+            <div class="tp-caption skewfromright" data-x="670" data-y="290" data-speed="2000" data-start="800" data-easing="Back.easeOut" data-endspeed="500" data-captionhidden="on" style="z-index:8;">
+              <p class="slide4-text3">Sed eget tellus sapien. Proinupmoso etiamgo velmis dolor amet pPro-<br />
+                inupmoso  etiamgo velmis dolor amet promo elit.</p>
+            </div>
+          </li>
+          <!-- SLIDE 1  -->
+          
+          <li data-transition="slotzoom-horizontal" data-slotamount="7" data-masterspeed="500"> <img src="<?php echo Yii::getAlias('@web') ?>/images/slide1.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat" />
+            <div class="tp-caption skewfromleft" data-x="292" data-y="196" data-speed="1500" data-start="800" data-easing="SlowMo.ease" data-endspeed="500" data-captionhidden="on" style="font-size:40px; z-index: 4"><span class="slide-text1">Shop<i>inn</i></span></div>
+            <div class="tp-caption skewfromright" data-x="158" data-y="244" data-speed="1500" data-start="800" data-easing="Sine.easeInOut" data-endspeed="500" data-captionhidden="on" style="font-size:30px; z-index: 4"><span class="slide-text1">More then branding <i>agency</i></span></div>
+            <div class="tp-caption fade" data-x="193" data-y="285" data-speed="1500" data-start="800" data-easing="Circ.easeIn" data-endspeed="500" data-captionhidden="on" style="font-size:14px; z-index: 4"><span class="slide-text1"><i>Discover more about store Advanced Technology</i></span></div>
+            <div class="tp-caption lfr" data-x="723" data-y="88" data-speed="1500" data-start="800" data-easing="Back.easeOut" data-endspeed="500" data-captionhidden="on" style="z-index: 4;"><img src="<?php echo Yii::getAlias('@web') ?>/images/slide-hand.png" alt="" /></div>
+          </li>
+          <!-- SLIDE 2  -->
+          
+          <li data-transition="curtain-2" data-slotamount="7" data-masterspeed="500"> <img src="<?php echo Yii::getAlias('@web') ?>/images/slide2.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat" />
+            <div class="tp-caption skewfromleft" data-x="2" data-y="141" data-speed="2000" data-start="1200" data-easing="Back.easeOut" data-endspeed="500" data-captionhidden="on" style="z-index: 4"><span><img src="<?php echo Yii::getAlias('@web') ?>/images/slide-girl.png" alt="" /></span></div>
+            <div class="tp-caption skewfromright" data-x="650" data-y="162" data-speed="2000" data-start="800" data-easing="Back.easeOut" data-endspeed="500" data-captionhidden="on" style="font-size:40px; z-index: 4; font-size:40px;"><span class="slide2-text1">SHOPPING</span></div>
+            <div class="tp-caption skewfromleft" data-x="650" data-y="224" data-speed="2000" data-start="800" data-easing="Back.easeOut" data-endspeed="500" data-captionhidden="on" style="font-size:40px; z-index: 4"><span class="slide2-text2">More then branding agency</span></div>
+            <div class="tp-caption skewfromright" data-x="650" data-y="294" data-speed="2000" data-start="800" data-easing="Back.easeOut" data-endspeed="500" data-captionhidden="on" style="font-size:40px; z-index: 4; font-size:30px;"><span class="slide2-text1">More then branding</span></div>
+          </li>
+          <!-- SLIDE 3  -->
+          
+        </ul>
+      </div>
+    </div>
+  </div>
 <!-- slider -->
+<!--
 <div class="row carousel-holder">
 
     <div class="col-md-12">
@@ -31,7 +73,7 @@
         </div>
     </div>
 
-</div>
+</div> -->
 <!-- end slider -->
 
 <!-- cutomer favorities -->
@@ -71,363 +113,12 @@
 						</div>
 			<?php endforeach; ?>					     	
           </div>
-	<div class="shop-tabs">
-          <div class="col-md-12 padding-0">
-            <ul class="nav nav-tabs shop-tab" id="myTab">
-              <li class="active"><a data-toggle="tab" href="#tab-photos">WOMEN</a></li>
-              <li class=""><a data-toggle="tab" href="#reviews">NEW STYLE</a></li>
-              <li class="brdr"><a data-toggle="tab" href="#video">FOOTWEAR</a></li>
-            </ul>
-            <div class="tab-content" id="myTabContent">
-              <div id="tab-photos" class="tab-pane fade active in">
-                <div class="tab-photos">
-                  <div class="tab-photo-sec">
-                    <div class="tab-photo">
-                      <div id="best-seller-2">
-                        <div class="row">
-                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                            <div class="best-seller most-sold">
-                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                              <div class="down">
-                                <h3>LOREM ISPUM</h3>
-                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                                <ul class="bag">
-                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                                </ul>
-                              </div>
-                              <img src="images/border.jpg"  class="border"/> </div>
-                          </div>
-                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                            <div class="best-seller most-sold">
-                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                              <div class="down">
-                                <h3>LOREM ISPUM</h3>
-                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                                <ul class="bag">
-                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                                </ul>
-                              </div>
-                              <img src="images/border.jpg"  class="border"/> </div>
-                          </div>
-                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                            <div class="best-seller most-sold">
-                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                              <div class="down">
-                                <h3>LOREM ISPUM</h3>
-                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                                <ul class="bag">
-                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                                </ul>
-                              </div>
-                              <img src="images/border.jpg"  class="border"/> </div>
-                          </div>
-                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                            <div class="best-seller most-sold">
-                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                              <div class="down">
-                                <h3>LOREM ISPUM</h3>
-                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                                <ul class="bag">
-                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                                </ul>
-                              </div>
-                              <img src="images/border.jpg"  class="border"/> </div>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                            <div class="best-seller most-sold">
-                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                              <div class="down">
-                                <h3>LOREM ISPUM</h3>
-                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                                <ul class="bag">
-                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                                </ul>
-                              </div>
-                              <img src="images/border.jpg"  class="border"/> </div>
-                          </div>
-                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                            <div class="best-seller most-sold">
-                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                              <div class="down">
-                                <h3>LOREM ISPUM</h3>
-                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                                <ul class="bag">
-                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                                </ul>
-                              </div>
-                              <img src="images/border.jpg"  class="border"/> </div>
-                          </div>
-                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                            <div class="best-seller most-sold">
-                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                              <div class="down">
-                                <h3>LOREM ISPUM</h3>
-                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                                <ul class="bag">
-                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                                </ul>
-                              </div>
-                              <img src="images/border.jpg"  class="border"/> </div>
-                          </div>
-                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                            <div class="best-seller most-sold">
-                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                              <div class="down">
-                                <h3>LOREM ISPUM</h3>
-                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                                <ul class="bag">
-                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                                </ul>
-                              </div>
-                              <img src="images/border.jpg"  class="border"/> </div>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                            <div class="best-seller most-sold">
-                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                              <div class="down">
-                                <h3>LOREM ISPUM</h3>
-                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                                <ul class="bag">
-                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                                </ul>
-                              </div>
-                              <img src="images/border.jpg"  class="border"/> </div>
-                          </div>
-                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                            <div class="best-seller most-sold">
-                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                              <div class="down">
-                                <h3>LOREM ISPUM</h3>
-                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                                <ul class="bag">
-                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                                </ul>
-                              </div>
-                              <img src="images/border.jpg"  class="border"/> </div>
-                          </div>
-                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                            <div class="best-seller most-sold">
-                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                              <div class="down">
-                                <h3>LOREM ISPUM</h3>
-                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                                <ul class="bag">
-                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                                </ul>
-                              </div>
-                              <img src="images/border.jpg"  class="border"/> </div>
-                          </div>
-                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                            <div class="best-seller most-sold">
-                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                              <div class="down">
-                                <h3>LOREM ISPUM</h3>
-                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                                <ul class="bag">
-                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                                </ul>
-                              </div>
-                              <img src="images/border.jpg"  class="border"/> </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div id="reviews" class="tab-pane fade">
-                <div class="tab-reveiws">
-                  <div class="fixed-img sec-bg2"></div>
-                  <div id="best-seller-3">
-                    <div class="row">
-                      <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                        <div class="best-seller most-sold">
-                          <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                          <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                          <div class="down">
-                            <h3>LOREM ISPUM</h3>
-                            <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                            <ul class="bag">
-                              <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                            </ul>
-                          </div>
-                          <img src="images/border.jpg"  class="border"/> </div>
-                      </div>
-                      <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                        <div class="best-seller most-sold">
-                          <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                          <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                          <div class="down">
-                            <h3>LOREM ISPUM</h3>
-                            <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                            <ul class="bag">
-                              <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                            </ul>
-                          </div>
-                          <img src="images/border.jpg"  class="border"/> </div>
-                      </div>
-                      <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                        <div class="best-seller most-sold">
-                          <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                          <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                          <div class="down">
-                            <h3>LOREM ISPUM</h3>
-                            <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                            <ul class="bag">
-                              <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                            </ul>
-                          </div>
-                          <img src="images/border.jpg"  class="border"/> </div>
-                      </div>
-                      <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                        <div class="best-seller most-sold">
-                          <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                          <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                          <div class="down">
-                            <h3>LOREM ISPUM</h3>
-                            <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                            <ul class="bag">
-                              <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                            </ul>
-                          </div>
-                          <img src="images/border.jpg"  class="border"/> </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                        <div class="best-seller most-sold">
-                          <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                          <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                          <div class="down">
-                            <h3>LOREM ISPUM</h3>
-                            <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                            <ul class="bag">
-                              <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                            </ul>
-                          </div>
-                          <img src="images/border.jpg"  class="border"/> </div>
-                      </div>
-                      <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                        <div class="best-seller most-sold">
-                          <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                          <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                          <div class="down">
-                            <h3>LOREM ISPUM</h3>
-                            <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                            <ul class="bag">
-                              <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                            </ul>
-                          </div>
-                          <img src="images/border.jpg"  class="border"/> </div>
-                      </div>
-                      <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                        <div class="best-seller most-sold">
-                          <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                          <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                          <div class="down">
-                            <h3>LOREM ISPUM</h3>
-                            <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                            <ul class="bag">
-                              <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                            </ul>
-                          </div>
-                          <img src="images/border.jpg"  class="border"/> </div>
-                      </div>
-                      <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                        <div class="best-seller most-sold">
-                          <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                          <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                          <div class="down">
-                            <h3>LOREM ISPUM</h3>
-                            <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                            <ul class="bag">
-                              <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                            </ul>
-                          </div>
-                          <img src="images/border.jpg"  class="border"/> </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                        <div class="best-seller most-sold">
-                          <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                          <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                          <div class="down">
-                            <h3>LOREM ISPUM</h3>
-                            <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                            <ul class="bag">
-                              <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                            </ul>
-                          </div>
-                          <img src="images/border.jpg"  class="border"/> </div>
-                      </div>
-                      <div class="cat1 cat3 col-lg-3  col-md-3 col-sm-12 inner-products ">
-                        <div class="best-seller most-sold">
-                          <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                          <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                          <div class="down">
-                            <h3>LOREM ISPUM</h3>
-                            <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                            <ul class="bag">
-                              <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                            </ul>
-                          </div>
-                          <img src="images/border.jpg"  class="border"/> </div>
-                      </div>
-                      <div class="cat1 cat3 col-lg-3  col-md-3 col-sm-12 inner-products ">
-                        <div class="best-seller most-sold">
-                          <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                          <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                          <div class="down">
-                            <h3>LOREM ISPUM</h3>
-                            <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                            <ul class="bag">
-                              <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                            </ul>
-                          </div>
-                          <img src="images/border.jpg"  class="border"/> </div>
-                      </div>
-                      <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                        <div class="best-seller most-sold">
-                          <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                          <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                          <div class="down">
-                            <h3>LOREM ISPUM</h3>
-                            <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                            <ul class="bag">
-                              <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                            </ul>
-                          </div>
-                          <img src="images/border.jpg"  class="border"/> </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-       
-            </div>
+	
           </div>
         </div>
-	</div>
 	</section>
 			
-
+</div>
 <!-- END cutomer favorities -->
 
 <!-- category collection -->
@@ -754,32 +445,13 @@
 
 
 </div>
-<script>
-    $(document).ready(function(){
 
-        $("#range_1").ionRangeSlider({
-            min: 0,
-            max: 5000,
-            from: 1000,
-            to: 4000,
-            type: 'double',
-            step: 1,
-            prefix: "$",
-            prettify: true,
-            hasGrid: true
-        });
-    });
-</script> 
 
-<!-- SLIDER REVOLUTION --> 
-<script type="text/javascript" src="./js/jquery.themepunch.plugins.min.js"></script> 
-<script type="text/javascript" src="./js/jquery.themepunch.revolution.min.js"></script> 
+ 
 <script type="text/javascript">
-
+$(document).ready(function() {
 	var revapi;
-	jQuery(document).ready(function() {
-	revapi = jQuery('.tp-banner').revolution(
-	{
+	revapi = jQuery('.tp-banner').revolution({
 	delay:10000,
 	startwidth:1170,
 	startheight:533,
@@ -789,190 +461,7 @@
 	fullWidth:"on",
 	fullScreen:"off",
 	fullScreenOffsetContainer: ""
-	});
-	});	
-</script> 
-<script type="text/javascript">
-
-	$(document).ready(function() {
-
-	
-	$(".footer-deal").owlCarousel({
-	autoPlay :true,
-	stopOnHover : true,
-	goToFirstSpeed : 2000,
-	slideSpeed:1500,
-	singleItem : true,
-	autoHeight : true,
-	transitionStyle:"goDown",
-	paginationNumbers:true
-	});	
-
-	$("#tab-recent").owlCarousel({
-	autoPlay :true,
-	stopOnHover : true,
-	navigation:true,
-	goToFirstSpeed : 2000,
-	slideSpeed:1500,
-	singleItem : true,
-	autoHeight : true,
-	pagination:false,
-	transitionStyle:"goDown"
-	});
-
-	$("#tab-popular").owlCarousel({
-	autoPlay :true,
-	stopOnHover : true,
-	navigation:true,
-	goToFirstSpeed : 2000,
-	slideSpeed:1500,
-	singleItem : true,
-	autoHeight : true,
-	pagination:false,
-	transitionStyle:"goDown"
-	});
-	
-	var now = new Date();
-	var current_year = now.getFullYear();
-	var next_year = current_year + 1;
-
-	var target_date = new Date("Jan 1, " + next_year).getTime();
-
-	var days, hours, minutes, seconds;
-
-	var $hours = document.getElementById("h");
-	var $minutes = document.getElementById("m");
-	var $seconds = document.getElementById("s");
-
-	function update() {
-	var current_date = new Date().getTime();
-	var seconds_left = (target_date - current_date) / 1000;
-
-	days = parseInt(seconds_left / 86400);
-	seconds_left = seconds_left % 86400;
-
-	hours = parseInt(seconds_left / 500);
-	seconds_left = seconds_left % 500;
-
-	minutes = parseInt(seconds_left / 60);
-	seconds = parseInt(seconds_left % 60);
-
-	$hours.innerHTML = pad(hours, 2);
-	$minutes.innerHTML = pad(minutes, 2);
-	$seconds.innerHTML = pad(seconds, 2);
-	}
-
-
-	update();
-
-	setInterval(update, 1000);
-
-	function pad(num, size) {
-	var s = num+"";
-	while (s.length < size) s = "0" + s;
-	return s;
-	}		
-
-	
-	});
-	$(".brands").owlCarousel({
-	autoPlay: 3000, //Set AutoPlay to 20 seconds
-	items : 5
-	});
-		$("#best-seller").owlCarousel({
-	autoPlay :true,
-	stopOnHover : true,
-	navigation:true,
-	goToFirstSpeed : 2000,
-	slideSpeed:1500,
-	singleItem : true,
-	autoHeight : true,
-	pagination:false,
-	transitionStyle:"goDown"
-	});
-	
-			$("#best-seller-2").owlCarousel({
-	autoPlay :true,
-	stopOnHover : true,
-	navigation:true,
-	goToFirstSpeed : 2000,
-	slideSpeed:1500,
-	singleItem : true,
-	autoHeight : true,
-	pagination:false,
-	transitionStyle:"goDown"
-	});
-			$("#best-seller-3").owlCarousel({
-	autoPlay :true,
-	stopOnHover : true,
-	navigation:true,
-	goToFirstSpeed : 2000,
-	slideSpeed:1500,
-	singleItem : true,
-	autoHeight : true,
-	pagination:false,
-	transitionStyle:"goDown"
-	});
-			$("#best-seller-4").owlCarousel({
-	autoPlay :true,
-	stopOnHover : true,
-	navigation:true,
-	goToFirstSpeed : 2000,
-	slideSpeed:1500,
-	singleItem : true,
-	autoHeight : true,
-	pagination:false,
-	transitionStyle:"goDown"
-	});
-				$("#best-seller-5").owlCarousel({
-	autoPlay :true,
-	stopOnHover : true,
-	navigation:true,
-	goToFirstSpeed : 2000,
-	slideSpeed:1500,
-	singleItem : true,
-	autoHeight : true,
-	pagination:false,
-	transitionStyle:"goDown"
-	});
-					$("#best-seller-6").owlCarousel({
-	autoPlay :true,
-	stopOnHover : true,
-	navigation:true,
-	goToFirstSpeed : 2000,
-	slideSpeed:1500,
-	singleItem : true,
-	autoHeight : true,
-	pagination:false,
-	transitionStyle:"goDown"
-	});
-	
-						$("#best-seller-7").owlCarousel({
-	autoPlay :true,
-	stopOnHover : true,
-	navigation:true,
-	goToFirstSpeed : 2000,
-	slideSpeed:1500,
-	singleItem : true,
-	autoHeight : true,
-	pagination:false,
-	transitionStyle:"goDown"
-	});
-	
-	
-	$("#shop-testimonial").owlCarousel({
-	autoPlay: 2000, //Set AutoPlay to 20 seconds
-	items : 1,
-	itemsDesktop : [1199,1],
-	itemsDesktopSmall : [979,1],
-	itemsTablet :	[768,1] ,
-	itemsMobile :	[479,1],
-	pagination:true,
-	stopOnHover : true,
-	transitionStyle:"goDown",
-	paginationNumbers:false,
-	autoPlay :true
-	
-	});
+	}); 	
+}); 
 
 </script>
