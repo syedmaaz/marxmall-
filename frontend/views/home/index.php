@@ -90,168 +90,32 @@
                   <div class="tab-photo-sec">
                     <div class="tab-photo">
                       <div id="best-seller-2">
-                        <div class="row">
-                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
+					   <?php $prod_chunk = array_chunk($product, 4);
+								foreach ($prod_chunk as $key => $products): ?>
+                        <div class="row item <?= ($key == 0) ? 'active' : '' ?>">
+                            <?php foreach ($products as $key => $prod): ?>
+						  <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
                             <div class="best-seller most-sold">
-                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
+                              <div class="sticker"> <img src="<?php echo Yii::getAlias('@web') ?>/images/t2/new-tag.png" /> </div>
+                              <div class="best-seller seller2 sold-thumb"> <a class="best-seller seller2 sold-thumb animated flipInY" href="<?= Yii::$app->urlManager->createUrl(['home/detail', 'id' => $prod->prod_id]) ?>">
+                                                <?php if (isset($prod->productImg[0])) { ?>
+                                                    <img class="seller-still" alt="" src="<?= Yii::$app->urlManager->getBaseUrl() . '/uploads/product/' .$prod->productImg[0]->meta_value ?>" alt="">
+                                                    <?php } else { ?>
+                                                        <img class="seller-still" alt="" src="http://placehold.it/280x355" alt="">
+                                                        <?php } ?>
+                                            </a></div>
                               <div class="down">
-                                <h3>LOREM ISPUM</h3>
-                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
+                                <h3><?= $prod->prod_name ?></h3>
+                                <span>$<?= $prod->prod_price; ?></span> <img src="<?= Yii::$app->urlManager->getBaseUrl() . '/images/stars.png'?>" alt="star" class="star"/>
                                 <ul class="bag">
-                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
+                                  <li ><a href="<?php echo Yii::getAlias('@web') ?>/images/t2/add-to-bag.png" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
                                 </ul>
                               </div>
-                              <img src="images/border.jpg"  class="border"/> </div>
+                              <img src="<?= Yii::$app->urlManager->getBaseUrl().'/images/border.jpg' ?>" class="border" /> </div>
                           </div>
-                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                            <div class="best-seller most-sold">
-                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                              <div class="down">
-                                <h3>LOREM ISPUM</h3>
-                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                                <ul class="bag">
-                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                                </ul>
-                              </div>
-                              <img src="images/border.jpg"  class="border"/> </div>
-                          </div>
-                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                            <div class="best-seller most-sold">
-                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                              <div class="down">
-                                <h3>LOREM ISPUM</h3>
-                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                                <ul class="bag">
-                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                                </ul>
-                              </div>
-                              <img src="images/border.jpg"  class="border"/> </div>
-                          </div>
-                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                            <div class="best-seller most-sold">
-                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                              <div class="down">
-                                <h3>LOREM ISPUM</h3>
-                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                                <ul class="bag">
-                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                                </ul>
-                              </div>
-                              <img src="images/border.jpg"  class="border"/> </div>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                            <div class="best-seller most-sold">
-                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                              <div class="down">
-                                <h3>LOREM ISPUM</h3>
-                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                                <ul class="bag">
-                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                                </ul>
-                              </div>
-                              <img src="images/border.jpg"  class="border"/> </div>
-                          </div>
-                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                            <div class="best-seller most-sold">
-                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                              <div class="down">
-                                <h3>LOREM ISPUM</h3>
-                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                                <ul class="bag">
-                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                                </ul>
-                              </div>
-                              <img src="images/border.jpg"  class="border"/> </div>
-                          </div>
-                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                            <div class="best-seller most-sold">
-                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                              <div class="down">
-                                <h3>LOREM ISPUM</h3>
-                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                                <ul class="bag">
-                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                                </ul>
-                              </div>
-                              <img src="images/border.jpg"  class="border"/> </div>
-                          </div>
-                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                            <div class="best-seller most-sold">
-                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                              <div class="down">
-                                <h3>LOREM ISPUM</h3>
-                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                                <ul class="bag">
-                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                                </ul>
-                              </div>
-                              <img src="images/border.jpg"  class="border"/> </div>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                            <div class="best-seller most-sold">
-                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                              <div class="down">
-                                <h3>LOREM ISPUM</h3>
-                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                                <ul class="bag">
-                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                                </ul>
-                              </div>
-                              <img src="images/border.jpg"  class="border"/> </div>
-                          </div>
-                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                            <div class="best-seller most-sold">
-                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                              <div class="down">
-                                <h3>LOREM ISPUM</h3>
-                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                                <ul class="bag">
-                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                                </ul>
-                              </div>
-                              <img src="images/border.jpg"  class="border"/> </div>
-                          </div>
-                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                            <div class="best-seller most-sold">
-                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                              <div class="down">
-                                <h3>LOREM ISPUM</h3>
-                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                                <ul class="bag">
-                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                                </ul>
-                              </div>
-                              <img src="images/border.jpg"  class="border"/> </div>
-                          </div>
-                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                            <div class="best-seller most-sold">
-                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                              <div class="down">
-                                <h3>LOREM ISPUM</h3>
-                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                                <ul class="bag">
-                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                                </ul>
-                              </div>
-                              <img src="images/border.jpg"  class="border"/> </div>
-                          </div>
-                        </div>
+					<?php endforeach; ?>
+					</div>
+						<?php endforeach; ?>                       
                       </div>
                     </div>
                   </div>
@@ -260,339 +124,69 @@
               <div id="reviews" class="tab-pane fade">
                 <div class="tab-reveiws">
                   <div class="fixed-img sec-bg2"></div>
-                  <div id="best-seller-3">
-                    <div class="row">
-                      <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                        <div class="best-seller most-sold">
-                          <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                          <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                          <div class="down">
-                            <h3>LOREM ISPUM</h3>
-                            <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                            <ul class="bag">
-                              <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                            </ul>
+					<div id="best-seller-3">
+					   <?php $prod_chunk = array_chunk($product, 4);
+								foreach ($prod_chunk as $key => $products): ?>
+                        <div class="row item <?= ($key == 0) ? 'active' : '' ?>">
+                            <?php foreach ($products as $key => $prod): ?>
+						  <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
+                            <div class="best-seller most-sold">
+                              <div class="sticker"> <img src="<?php echo Yii::getAlias('@web') ?>/images/t2/new-tag.png" /> </div>
+                              <div class="best-seller seller2 sold-thumb"> <a class="best-seller seller2 sold-thumb animated flipInY" href="<?= Yii::$app->urlManager->createUrl(['home/detail', 'id' => $prod->prod_id]) ?>">
+                                                <?php if (isset($prod->productImg[0])) { ?>
+                                                    <img class="seller-still" alt="" src="<?= Yii::$app->urlManager->getBaseUrl() . '/uploads/product/' .$prod->productImg[0]->meta_value ?>" alt="">
+                                                    <?php } else { ?>
+                                                        <img class="seller-still" alt="" src="http://placehold.it/280x355" alt="">
+                                                        <?php } ?>
+                                            </a></div>
+                              <div class="down">
+                                <h3><?= $prod->prod_name ?></h3>
+                                <span>$<?= $prod->prod_price; ?></span> <img src="<?= Yii::$app->urlManager->getBaseUrl() . '/images/stars.png'?>" alt="star" class="star"/>
+                                <ul class="bag">
+                                  <li ><a href="<?php echo Yii::getAlias('@web') ?>/images/t2/add-to-bag.png" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
+                                </ul>
+                              </div>
+                              <img src="<?= Yii::$app->urlManager->getBaseUrl().'/images/border.jpg' ?>" class="border" /> </div>
                           </div>
-                          <img src="images/border.jpg"  class="border"/> </div>
+					<?php endforeach; ?>
+					</div>
+						<?php endforeach; ?>                       
                       </div>
-                      <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                        <div class="best-seller most-sold">
-                          <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                          <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                          <div class="down">
-                            <h3>LOREM ISPUM</h3>
-                            <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                            <ul class="bag">
-                              <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                            </ul>
-                          </div>
-                          <img src="images/border.jpg"  class="border"/> </div>
-                      </div>
-                      <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                        <div class="best-seller most-sold">
-                          <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                          <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                          <div class="down">
-                            <h3>LOREM ISPUM</h3>
-                            <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                            <ul class="bag">
-                              <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                            </ul>
-                          </div>
-                          <img src="images/border.jpg"  class="border"/> </div>
-                      </div>
-                      <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                        <div class="best-seller most-sold">
-                          <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                          <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                          <div class="down">
-                            <h3>LOREM ISPUM</h3>
-                            <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                            <ul class="bag">
-                              <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                            </ul>
-                          </div>
-                          <img src="images/border.jpg"  class="border"/> </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                        <div class="best-seller most-sold">
-                          <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                          <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                          <div class="down">
-                            <h3>LOREM ISPUM</h3>
-                            <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                            <ul class="bag">
-                              <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                            </ul>
-                          </div>
-                          <img src="images/border.jpg"  class="border"/> </div>
-                      </div>
-                      <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                        <div class="best-seller most-sold">
-                          <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                          <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                          <div class="down">
-                            <h3>LOREM ISPUM</h3>
-                            <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                            <ul class="bag">
-                              <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                            </ul>
-                          </div>
-                          <img src="images/border.jpg"  class="border"/> </div>
-                      </div>
-                      <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                        <div class="best-seller most-sold">
-                          <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                          <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                          <div class="down">
-                            <h3>LOREM ISPUM</h3>
-                            <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                            <ul class="bag">
-                              <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                            </ul>
-                          </div>
-                          <img src="images/border.jpg"  class="border"/> </div>
-                      </div>
-                      <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                        <div class="best-seller most-sold">
-                          <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                          <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                          <div class="down">
-                            <h3>LOREM ISPUM</h3>
-                            <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                            <ul class="bag">
-                              <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                            </ul>
-                          </div>
-                          <img src="images/border.jpg"  class="border"/> </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                        <div class="best-seller most-sold">
-                          <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                          <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                          <div class="down">
-                            <h3>LOREM ISPUM</h3>
-                            <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                            <ul class="bag">
-                              <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                            </ul>
-                          </div>
-                          <img src="images/border.jpg"  class="border"/> </div>
-                      </div>
-                      <div class="cat1 cat3 col-lg-3  col-md-3 col-sm-12 inner-products ">
-                        <div class="best-seller most-sold">
-                          <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                          <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                          <div class="down">
-                            <h3>LOREM ISPUM</h3>
-                            <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                            <ul class="bag">
-                              <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                            </ul>
-                          </div>
-                          <img src="images/border.jpg"  class="border"/> </div>
-                      </div>
-                      <div class="cat1 cat3 col-lg-3  col-md-3 col-sm-12 inner-products ">
-                        <div class="best-seller most-sold">
-                          <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                          <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                          <div class="down">
-                            <h3>LOREM ISPUM</h3>
-                            <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                            <ul class="bag">
-                              <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                            </ul>
-                          </div>
-                          <img src="images/border.jpg"  class="border"/> </div>
-                      </div>
-                      <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                        <div class="best-seller most-sold">
-                          <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                          <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                          <div class="down">
-                            <h3>LOREM ISPUM</h3>
-                            <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                            <ul class="bag">
-                              <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                            </ul>
-                          </div>
-                          <img src="images/border.jpg"  class="border"/> </div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
               <div id="video" class="tab-pane fade">
                 <div class="tab-video">
-                  <div id="#video" class="tab-pane fade">
+                  <div class="tab-pane fade">
                     <div class="tab-video">
                       <div class="fixed-img sec-bg2"></div>
-                      <div id="best-seller-4">
-                        <div class="row">
-                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
+                       <div id="best-seller-4">
+					   <?php $prod_chunk = array_chunk($product, 4);
+								foreach ($prod_chunk as $key => $products): ?>
+                        <div class="row item <?= ($key == 0) ? 'active' : '' ?>">
+                            <?php foreach ($products as $key => $prod): ?>
+						  <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
                             <div class="best-seller most-sold">
-                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
+                              <div class="sticker"> <img src="<?php echo Yii::getAlias('@web') ?>/images/t2/new-tag.png" /> </div>
+                              <div class="best-seller seller2 sold-thumb"> <a class="best-seller seller2 sold-thumb animated flipInY" href="<?= Yii::$app->urlManager->createUrl(['home/detail', 'id' => $prod->prod_id]) ?>">
+                                                <?php if (isset($prod->productImg[0])) { ?>
+                                                    <img class="seller-still" alt="" src="<?= Yii::$app->urlManager->getBaseUrl() . '/uploads/product/' .$prod->productImg[0]->meta_value ?>" alt="">
+                                                    <?php } else { ?>
+                                                        <img class="seller-still" alt="" src="http://placehold.it/280x355" alt="">
+                                                        <?php } ?>
+                                            </a></div>
                               <div class="down">
-                                <h3>LOREM ISPUM</h3>
-                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
+                                <h3><?= $prod->prod_name ?></h3>
+                                <span>$<?= $prod->prod_price; ?></span> <img src="<?= Yii::$app->urlManager->getBaseUrl() . '/images/stars.png'?>" alt="star" class="star"/>
                                 <ul class="bag">
-                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
+                                  <li ><a href="<?php echo Yii::getAlias('@web') ?>/images/t2/add-to-bag.png" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
                                 </ul>
                               </div>
-                              <img src="images/border.jpg"  class="border"/> </div>
+                              <img src="<?= Yii::$app->urlManager->getBaseUrl().'/images/border.jpg' ?>" class="border" /> </div>
                           </div>
-                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                            <div class="best-seller most-sold">
-                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                              <div class="down">
-                                <h3>LOREM ISPUM</h3>
-                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                                <ul class="bag">
-                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                                </ul>
-                              </div>
-                              <img src="images/border.jpg"  class="border"/> </div>
-                          </div>
-                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                            <div class="best-seller most-sold">
-                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                              <div class="down">
-                                <h3>LOREM ISPUM</h3>
-                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                                <ul class="bag">
-                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                                </ul>
-                              </div>
-                              <img src="images/border.jpg"  class="border"/> </div>
-                          </div>
-                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                            <div class="best-seller most-sold">
-                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                              <div class="down">
-                                <h3>LOREM ISPUM</h3>
-                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                                <ul class="bag">
-                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                                </ul>
-                              </div>
-                              <img src="images/border.jpg"  class="border"/> </div>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                            <div class="best-seller most-sold">
-                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                              <div class="down">
-                                <h3>LOREM ISPUM</h3>
-                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                                <ul class="bag">
-                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                                </ul>
-                              </div>
-                              <img src="images/border.jpg"  class="border"/> </div>
-                          </div>
-                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                            <div class="best-seller most-sold">
-                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                              <div class="down">
-                                <h3>LOREM ISPUM</h3>
-                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                                <ul class="bag">
-                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                                </ul>
-                              </div>
-                              <img src="images/border.jpg"  class="border"/> </div>
-                          </div>
-                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                            <div class="best-seller most-sold">
-                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                              <div class="down">
-                                <h3>LOREM ISPUM</h3>
-                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                                <ul class="bag">
-                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                                </ul>
-                              </div>
-                              <img src="images/border.jpg"  class="border"/> </div>
-                          </div>
-                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                            <div class="best-seller most-sold">
-                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                              <div class="down">
-                                <h3>LOREM ISPUM</h3>
-                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                                <ul class="bag">
-                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                                </ul>
-                              </div>
-                              <img src="images/border.jpg"  class="border"/> </div>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                            <div class="best-seller most-sold">
-                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                              <div class="down">
-                                <h3>LOREM ISPUM</h3>
-                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                                <ul class="bag">
-                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                                </ul>
-                              </div>
-                              <img src="images/border.jpg"  class="border"/> </div>
-                          </div>
-                          <div class="cat1 cat3 col-lg-3  col-md-3 col-sm-12 inner-products ">
-                            <div class="best-seller most-sold">
-                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                              <div class="down">
-                                <h3>LOREM ISPUM</h3>
-                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                                <ul class="bag">
-                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                                </ul>
-                              </div>
-                              <img src="images/border.jpg"  class="border"/> </div>
-                          </div>
-                          <div class="cat1 cat3 col-lg-3  col-md-3 col-sm-12 inner-products ">
-                            <div class="best-seller most-sold">
-                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                              <div class="down">
-                                <h3>LOREM ISPUM</h3>
-                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                                <ul class="bag">
-                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                                </ul>
-                              </div>
-                              <img src="images/border.jpg"  class="border"/> </div>
-                          </div>
-                          <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
-                            <div class="best-seller most-sold">
-                              <div class="sticker"> <img src="images/sticker.jpg" /> </div>
-                              <div class="best-seller seller2 sold-thumb"> <img class="seller-still" alt="" src="images/girl1.jpg" /> </div>
-                              <div class="down">
-                                <h3>LOREM ISPUM</h3>
-                                <span>$460</span> <img src="images/stars.png" alt="star" class="star"/>
-                                <ul class="bag">
-                                  <li ><a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
-                                </ul>
-                              </div>
-                              <img src="images/border.jpg"  class="border"/> </div>
-                          </div>
+					<?php endforeach; ?>
+					</div>
+						<?php endforeach; ?>                       
+                      </div>                      
                         </div>
                       </div>
                     </div>
@@ -601,151 +195,288 @@
               </div>
             </div>
           </div>
+		</section>
         </div>
             </div>
+			  <div class="container">
+    <div class="row header-background">
+      <div class="col-lg-12">
+        <div class=" banner padding-0"><img src="<?php echo Yii::getAlias('@web') ?>/images/t2/ad.png" alt="" width="100%" /></div>
+      </div>
+    </div>
+  </div>
             <div class="col-sm-12 col-lg-12 col-md-12 pull-right row ads">
-                <img src="<?php echo Yii::getAlias('@web') ?>/images/t2/ad.png" alt="" width="100%" />
-            </div>
-            <div id="best-offer" class="col-sm-9 col-lg-9 col-md-9 pull-right row carousel slide product-slider container" data-ride="carousel" data-interval="false">
-                <h4>best offers</h4>
-                <a class="left carousel-control" href="#best-offer" data-slide="prev">
-                    <img src="<?php echo Yii::getAlias('@web') ?>/images/t2/slider-white-btn-left.png" alt=""/>
-                </a>
-                <a class="right carousel-control" href="#best-offer" data-slide="next">
-                    <img src="<?php echo Yii::getAlias('@web') ?>/images/t2/slider-white-btn-right.png" alt=""/>
-                </a>
-                <div class="carousel-inner">
-                    <?php
-                        $prod_chunk = array_chunk($product, 3);
-                        foreach ($prod_chunk as $key => $products):
-                    ?>
-                        <div class="item <?= ($key == 0) ? 'active' : '' ?>">
-                            <?php foreach ($products as $key => $prod): ?>
-                                <div class="product col-sm-4 col-lg-4 col-md-4">
-                                    <img class="new-tag" src="<?php echo Yii::getAlias('@web') ?>/images/t2/new-tag.png" alt="" />
-                                    <div class="thumbnail">
-                                        <a href="<?= Yii::$app->urlManager->createUrl(['home/detail', 'id' => $prod->prod_id]) ?>">
-                                            <?php if (isset($prod->productImg[0])) { ?>
-                                                <img src="<?= $prod->productImg[0]->meta_value ?>" alt="">
-                                                <?php } else { ?>
-                                                    <img src="http://placehold.it/280x355" alt="">
-                                                    <?php } ?>
-                                        </a>
-                                        <div class="caption">
-                                            <h4 class="pull-right">$24.99</h4>
-                                            <h4><a href="#">First Product</a>
-
-                                        </div>
-                                        <div class="ratings">
-                                            <a class="pull-right">
-                                                <img class="add-to-bag"
-                                                     src="<?php echo Yii::getAlias('@web') ?>/images/t2/add-to-bag.png"
-                                                     alt=""/>
-                                            </a>
-
-                                            <p>
-                                                <span class="glyphicon glyphicon-star"></span>
-                                                <span class="glyphicon glyphicon-star"></span>
-                                                <span class="glyphicon glyphicon-star"></span>
-                                                <span class="glyphicon glyphicon-star"></span>
-                                                <span class="glyphicon glyphicon-star"></span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                <img class="product-bottom-border" src="<?php echo Yii::getAlias('@web') ?>/images/t2/product-bottom-border.png" alt=""/>
-                             </div>
-
-                          <?php endforeach; ?>
-
-
-            </div>
-        <?php endforeach; ?>
-    </div>
-</div>
-
-            <div class="col-sm-3 col-lg-3 col-md-3 pull-right row">
-
-                <div class="col-sm-12 col-lg-12 col-md-12 pull-left">
-                    <!-- best seller -->
-                    <div id="best-seller" class="col-sm-12 col-lg-12 col-md-12 pull-left row carousel slide product-slider container">
-                        <h4>best seller</h4>
-                        <div class="carousel-inner">
-                            <div class="item active">
-                                <div class="seller">
-                                    <img src="http://placehold.it/280x355" alt="">
-                                    <div class="caption">
-                                        <h4>
-                                            <a href="#">First Seller</a>
-                                        </h4>
-                                        <div class="ratings">
-                                            <p>
-                                                <span class="glyphicon glyphicon-star"></span>
-                                                <span class="glyphicon glyphicon-star"></span>
-                                                <span class="glyphicon glyphicon-star"></span>
-                                                <span class="glyphicon glyphicon-star"></span>
-                                                <span class="glyphicon glyphicon-star"></span>
-                                            </p>
-                                            <h4 class="">$24.99</h4>
-                                        </div>
-                                        <a class="pull-left add-to-bag">
-                                            <img class="add-to-bag" src="<?php echo Yii::getAlias('@web') ?>/images/t2/add-to-bag.png" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="seller">
-                                    <img src="http://placehold.it/280x355" alt="">
-                                    <div class="caption">
-                                        <h4>
-                                            <a href="#">First Seller</a>
-                                        </h4>
-                                        <div class="ratings">
-                                            <p>
-                                                <span class="glyphicon glyphicon-star"></span>
-                                                <span class="glyphicon glyphicon-star"></span>
-                                                <span class="glyphicon glyphicon-star"></span>
-                                                <span class="glyphicon glyphicon-star"></span>
-                                                <span class="glyphicon glyphicon-star"></span>
-                                            </p>
-                                        </div>
-                                        <h4 class="">$24.99</h4>
-                                        <a class="pull-left">
-                                            <img class="add-to-bag" src="<?php echo Yii::getAlias('@web') ?>/images/t2/add-to-bag.png" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="seller">
-                                    <img src="http://placehold.it/280x355" alt="">
-                                    <div class="caption">
-                                        <h4>
-                                            <a href="#">First Seller</a>
-                                        </h4>
-                                        <div class="ratings">
-                                            <p>
-                                                <span class="glyphicon glyphicon-star"></span>
-                                                <span class="glyphicon glyphicon-star"></span>
-                                                <span class="glyphicon glyphicon-star"></span>
-                                                <span class="glyphicon glyphicon-star"></span>
-                                                <span class="glyphicon glyphicon-star"></span>
-                                            </p>
-                                        </div>
-                                        <h4 class="">$24.99</h4>
-                                        <a class="pull-left">
-                                            <img class="add-to-bag" src="<?php echo Yii::getAlias('@web') ?>/images/t2/add-to-bag.png"
-                                                 alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end best offer -->
-                <!-- best offer -->
-                <!-- END best offer -->
-            </div>
+            </div> 
+<div class="container  header-background">
+    <div class="row">
+      <div class="col-lg-3 margin-top-21">
+        <div class="best-deals aside"> <span>BEST SELLER</span>
+          <ul class="padding-0">
+            <li> <span><img src="./images/small-girl.jpg" alt="" /></span>
+              <h4>Lorem Ipsum</h4>
+              <img src="images/small-star.jpg" alt="small-star" class="small"/>
+              <h5><span class="oldRate">$98.00</span> <span class="new-rate">$56.00</span></h5>
+              <a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a> </li>
+            <li> <span><img src="./images/small-girl.jpg" alt="" /></span>
+              <h4>Lorem Ipsum</h4>
+              <img src="images/small-star.jpg" alt="small-star" class="small"/>
+              <h5><span class="oldRate">$98.00</span> <span class="new-rate">$56.00</span></h5>
+              <a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a> </li>
+            <li> <span><img src="./images/small-girl.jpg" alt="" /></span>
+              <h4>Lorem Ipsum</h4>
+              <img src="images/small-star.jpg" alt="small-star" class="small"/>
+              <h5><span class="oldRate">$98.00</span> <span class="new-rate">$56.00</span></h5>
+              <a href="#" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a> </li>
+          </ul>
         </div>
-    </section>
-    </div>
+		<!--
+        <div class="heading1">
+          <h5>TESTIMONIAL</h5>
+        </div>
+        <div id="best-seller-7">
+          <div class="row">
+            <div class="cat1 cat3 col-lg-12   inner-products ">
+              <div class="best-seller best-seller-1 most-sold">
+                
+                <div class="best-seller  sold-thumb"> <div id="shop-testimonial">
+          <div class="w-ceo">
+            <p>Vestibulum vel posuere ante. Etiam viverra, odio sit amet consequat rhoncus, lacus dolor sodales diam, aliquet fermentum lectus enim id lacus.</p>
+            <img alt="" src="./images/our-ceo1.jpg" />
+            <h5>Nick Roach<span>November 14 2014</span></h5>
+          </div> </div>
+                
+               
+            </div>
+            </div>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="cat1 cat3 col-lg-12   inner-products ">
+              <div class="best-seller best-seller-1 most-sold">
+                
+                <div class="best-seller  sold-thumb"> <div id="shop-testimonial">
+          <div class="w-ceo">
+            <p>Vestibulum vel posuere ante. Etiam viverra, odio sit amet consequat rhoncus, lacus dolor sodales diam, aliquet fermentum lectus enim id lacus.</p>
+            <img alt="" src="./images/our-ceo1.jpg" />
+            <h5>Nick Roach<span>November 14 2014</span></h5>
+          </div> </div>
+                
+               
+            </div>
+            </div>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="cat1 cat3 col-lg-12   inner-products ">
+              <div class="best-seller best-seller-1 most-sold">
+                
+                <div class="best-seller  sold-thumb"> <div id="shop-testimonial">
+          <div class="w-ceo">
+            <p>Vestibulum vel posuere ante. Etiam viverra, odio sit amet consequat rhoncus, lacus dolor sodales diam, aliquet fermentum lectus enim id lacus.</p>
+            <img alt="" src="./images/our-ceo1.jpg" />
+            <h5>Nick Roach<span>November 14 2014</span></h5>
+          </div> </div>
+                
+               
+            </div>
+            </div>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="cat1 cat3 col-lg-12   inner-products ">
+              <div class="best-seller best-seller-1 most-sold">
+                
+                <div class="best-seller  sold-thumb"> <div id="shop-testimonial">
+          <div class="w-ceo">
+            <p>Vestibulum vel posuere ante. Etiam viverra, odio sit amet consequat rhoncus, lacus dolor sodales diam, aliquet fermentum lectus enim id lacus.</p>
+            <img alt="" src="./images/our-ceo1.jpg" />
+            <h5>Nick Roach<span>November 14 2014</span></h5>
+          </div> </div>
+                
+               
+            </div>
+            </div>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="cat1 cat3 col-lg-12   inner-products ">
+              <div class="best-seller best-seller-1 most-sold">
+                
+                <div class="best-seller  sold-thumb"> <div id="shop-testimonial">
+          <div class="w-ceo">
+            <p>Vestibulum vel posuere ante. Etiam viverra, odio sit amet consequat rhoncus, lacus dolor sodales diam, aliquet fermentum lectus enim id lacus.</p>
+            <img alt="" src="./images/our-ceo1.jpg" />
+            <h5>Nick Roach<span>November 14 2014</span></h5>
+          </div> </div>
+                
+               
+            </div>
+            </div>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="cat1 cat3 col-lg-12   inner-products ">
+              <div class="best-seller best-seller-1 most-sold">
+                
+                <div class="best-seller  sold-thumb"> <div id="shop-testimonial">
+          <div class="w-ceo">
+            <p>Vestibulum vel posuere ante. Etiam viverra, odio sit amet consequat rhoncus, lacus dolor sodales diam, aliquet fermentum lectus enim id lacus.</p>
+            <img alt="" src="./images/our-ceo1.jpg" />
+            <h5>Nick Roach<span>November 14 2014</span></h5>
+          </div> </div>
+                
+               
+            </div>
+            </div>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="cat1 cat3 col-lg-12   inner-products ">
+              <div class="best-seller best-seller-1 most-sold">
+                
+                <div class="best-seller  sold-thumb"> <div id="shop-testimonial">
+          <div class="w-ceo">
+            <p>Vestibulum vel posuere ante. Etiam viverra, odio sit amet consequat rhoncus, lacus dolor sodales diam, aliquet fermentum lectus enim id lacus.</p>
+            <img alt="" src="./images/our-ceo1.jpg" />
+            <h5>Nick Roach<span>November 14 2014</span></h5>
+          </div> </div>
+                
+               
+            </div>
+            </div>
+            </div>
+
+          </div>
+        </div>
+        
+        -->
+        
+      </div>
+          <div class="col-lg-8 margin-top-21">
+        <div class="best-deals"> <span>BEST OFFERS</span> </div>
+        <div class="fixed-img sec-bg2"></div>
+        <div id="best-seller-6">
+		 <?php $prod_chunk = array_chunk($product, 4);
+            foreach ($prod_chunk as $key => $products): ?>
+          <div class="row item <?= ($key == 0) ? 'active' : '' ?>">
+		      <?php foreach ($products as $key => $prod): ?>
+            <div class="cat1 cat3 col-lg-3  col-md-6 col-sm-12 inner-products ">
+              <div class="best-seller most-sold">
+                <div class="sticker"> <img src="<?php echo Yii::getAlias('@web') ?>/images/t2/new-tag.png" /> </div>
+                <div class="best-seller seller2 sold-thumb">    <a class="best-seller seller2 sold-thumb animated flipInY" href="<?= Yii::$app->urlManager->createUrl(['home/detail', 'id' => $prod->prod_id]) ?>">
+                                                <?php if (isset($prod->productImg[0])) { ?>
+                                                    <img class="seller-still" alt="" src="<?= Yii::$app->urlManager->getBaseUrl() . '/uploads/product/' .$prod->productImg[0]->meta_value ?>" alt="">
+                                                    <?php } else { ?>
+                                                        <img class="seller-still" alt="" src="http://placehold.it/280x355" alt="">
+                                                        <?php } ?>
+                                            </a></div>
+                <div class="down down-1 down-3">
+                  <h3><?= $prod->prod_name ?></h3>
+                  <span>$<?= $prod->prod_price; ?></span>
+                  <div class="stars-1"> <img src="<?= Yii::$app->urlManager->getBaseUrl() . '/images/stars.png'?>" alt="star" class="star" /></div>
+                  <div class="pink-button">
+                    <ul class="bag">
+						<li><a class="add-to-cart" href="<?php echo Yii::getAlias('@web') ?>/images/t2/add-to-bag.png" title="">ADD TO BAG<i class="fa fa-arrow-right"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <img src="<?= Yii::$app->urlManager->getBaseUrl().'/images/border.jpg' ?>" class="border" />
+			</div>
+            </div>
+				<?php endforeach; ?>
+          </div>
+		    <?php endforeach; ?>
+        </div>
+		<!--
+        <div class="best-deals"> <span>LATEST FROM BLOG</span> </div>
+        <div class="fixed-img sec-bg2"></div>
+        <div id="best-seller-5">
+          <div class="row">
+            <div class="col-lg-4 col-xs-12">
+              <div class=" most-sold post">
+                <div class=" seller2 sold-thumb"> <img class="seller-still" alt="" src="images/footer-girl.png" /> </div>
+                <h2>Lorem Ipsum Generator</h2>
+                <h3>By Theme Vast 01-oct 2014</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur  adipiscing elit, sed d copy</p>
+                <a href="#">Read more<i class="fa fa-arrow-right"></i></a> </div>
+            </div>
+            <div class="col-lg-4 col-xs-12">
+              <div class=" most-sold post">
+                <div class=" seller2 sold-thumb"> <img class="seller-still" alt="" src="images/small-girl-2.png" /> </div>
+                <h2>Lorem Ipsum Generator</h2>
+                <h3>By Theme Vast 01-oct 2014</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur  adipiscing elit, sed d copy</p>
+                <a href="#">Read more<i class="fa fa-arrow-right"></i></a> </div>
+            </div>
+            <div class="col-lg-4 col-xs-12">
+              <div class=" most-sold post">
+                <div class=" seller2 sold-thumb"> <img class="seller-still" alt="" src="images/small-men-1.png" /> </div>
+                <h2>Lorem Ipsum Generator</h2>
+                <h3>By Theme Vast 01-oct 2014</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur  adipiscing elit, sed d copy</p>
+                <a href="#">Read more<i class="fa fa-arrow-right"></i></a> </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-xs-12">
+              <div class=" most-sold post">
+                <div class=" seller2 sold-thumb"> <img class="seller-still" alt="" src="images/footer-girl.png" /> </div>
+                <h2>Lorem Ipsum Generator</h2>
+                <h3>By Theme Vast 01-oct 2014</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur  adipiscing elit, sed d copy</p>
+                <a href="#">Read more<i class="fa fa-arrow-right"></i></a> </div>
+            </div>
+            <div class="col-lg-4 col-xs-12">
+              <div class=" most-sold post">
+                <div class=" seller2 sold-thumb"> <img class="seller-still" alt="" src="images/small-girl-2.png" /> </div>
+                <h2>Lorem Ipsum Generator</h2>
+                <h3>By Theme Vast 01-oct 2014</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur  adipiscing elit, sed d copy</p>
+                <a href="#">Read more<i class="fa fa-arrow-right"></i></a> </div>
+            </div>
+            <div class="col-lg-4 col-xs-12">
+              <div class=" most-sold post">
+                <div class=" seller2 sold-thumb"> <img class="seller-still" alt="" src="images/small-men-1.png" /> </div>
+                <h2>Lorem Ipsum Generator</h2>
+                <h3>By Theme Vast 01-oct 2014</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur  adipiscing elit, sed d copy</p>
+                <a href="#">Read more<i class="fa fa-arrow-right"></i></a> </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-xs-12">
+              <div class=" most-sold post">
+                <div class=" seller2 sold-thumb"> <img class="seller-still" alt="" src="images/footer-girl.png" /> </div>
+                <h2>Lorem Ipsum Generator</h2>
+                <h3>By Theme Vast 01-oct 2014</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur  adipiscing elit, sed d copy</p>
+                <a href="#">Read more<i class="fa fa-arrow-right"></i></a> </div>
+            </div>
+            <div class="col-lg-4 col-xs-12">
+              <div class=" most-sold post">
+                <div class=" seller2 sold-thumb"> <img class="seller-still" alt="" src="images/small-girl-2.png" /> </div>
+                <h2>Lorem Ipsum Generator</h2>
+                <h3>By Theme Vast 01-oct 2014</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur  adipiscing elit, sed d copy</p>
+                <a href="#">Read more<i class="fa fa-arrow-right"></i></a> </div>
+            </div>
+            <div class="col-lg-4 col-xs-12">
+              <div class=" most-sold post">
+                <div class=" seller2 sold-thumb"> <img class="seller-still" alt="" src="images/small-men-1.png" /> </div>
+                <h2>Lorem Ipsum Generator</h2>
+                <h3>By Theme Vast 01-oct 2014</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur  adipiscing elit, sed d copy</p>
+                <a href="#">Read more<i class="fa fa-arrow-right"></i></a> </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
 	  <section id="brands">
     <div class="fixed-img sec-bg3"></div>
     <div class="container"> <span><i>OUR</i> BRANDS</span>
