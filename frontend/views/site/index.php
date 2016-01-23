@@ -26,6 +26,9 @@ use yii\bootstrap\ActiveForm;
                     <ul>
                         <li><a href="#">LIVE CHAT</a></li>
                         <li><a href="<?= Yii::$app->urlManager->createUrl(['site/register-store']) ?>">BUY A SHOP</a></li>
+						<li><a href="#">REGISTER</a></li>
+						<li><a href="#">MY ACCOUNT<span><i class="fa fa-caret-down"></i></span></a></li>
+						<li><a href="#">EN<span><i class="fa fa-angle-down"></i></span></a></li>
                     </ul>
                 </div>
             </div>
@@ -39,8 +42,10 @@ use yii\bootstrap\ActiveForm;
                     <li class="tab-1"><a href="#home">Home<span><img src="images/t1/home-icon.png"/></span></a></li>
                     <li class="tab-2"><a href="#about-us">About Us<span><img src="images/t1/information-icon.png"/></span></a></li>
                     <li class="tab-3"><a href="#testimonials">Testimonials<span><img src="images/t1/pencil.png"/></span></a></li>
+					<li class="tab-4"><a href="#garments">Garments<span><img src="images/t1/fax.png"/></span></a></li>
                     <li class="tab-5"><a href="#terms-condition">Terms &amp; conditions<span><img src="images/t1/hand-shake.png"/></span></a></li>
                     <li class="tab-6"><a href="#privacy-policy">Privacy Policy<span><img src="images/t1/lock.png"/></span></a></li>
+					<li class="tab-7"><a href="#shop-catogories">Shop-catogories<span><img src="images/t1/book.png"/></span></a></li>
                     <li class="tab-8"><a href="#blog">Blog<span><img src="images/t1/note.png"/></span></a></li>
                 </ul>
             </div>
@@ -112,7 +117,7 @@ use yii\bootstrap\ActiveForm;
                                        foreach ($store_chunk as $store):  ?>
                                         <li>
                                             <a href="<?= Yii::$app->urlManager->createUrl(['home/index', 'id' => $store->store_id ]) ?>" class="span2">
-                                            <img style="height: 148px;" src="<?= Yii::$app->urlManager->getBaseUrl() . '/uploads' . $store->store_picture ?>"/>
+                                            <img src="<?= Yii::$app->urlManager->getBaseUrl() . '/uploads' . $store->store_picture ?>"/>
                                         </a>
                                         </li>
                                         <?php endforeach; 
@@ -165,7 +170,7 @@ use yii\bootstrap\ActiveForm;
                                        foreach ($cat_chunk as $cat):  ?>
                                         <li>
                                             <a href="#garments" class="span2 navigat-btn">
-                                            <img style="height: 148px;" src="<?= Yii::$app->urlManager->getBaseUrl() . '/uploads' .  $cat->cat_pic ?>"/>
+                                            <img src="<?= Yii::$app->urlManager->getBaseUrl() . '/uploads' .  $cat->cat_pic ?>"/>
                                         </a>
                                         </li>
                                         <?php endforeach; ?>
@@ -246,7 +251,7 @@ use yii\bootstrap\ActiveForm;
                                  <?php 
                                  foreach ($testimonials as $key => $testi): ?>
                                 <div class="testimonials-1">
-                                    <div class="testimonials-a"> <img src="<?php echo Yii::$app->urlManager->getBaseUrl() . '/uploads/testimonial/' .$testi->image;?>" /> </div>
+                                    <div class="testimonials-a"> <img style="height:100px;width:100px" src="<?php echo Yii::$app->urlManager->getBaseUrl() . '/uploads/testimonial/' .$testi->image;?>" /> </div>
                                     <div class="testimonials-b">
                                     <?php echo $testi->comment;?>
                                     </div>
@@ -276,7 +281,7 @@ use yii\bootstrap\ActiveForm;
                                                 </ul>
                                             </div>
                                             <div class="blog-b">
-                                                <?php echo $b->title;?>
+                                                <p><?php echo $b->title;?><p>
                                                     <h5>Posted by <span>Admin</span></h5>
                                                     <?php echo $b->content;?>
                                                         <ul>
@@ -284,7 +289,7 @@ use yii\bootstrap\ActiveForm;
                                                             <!--   <li><a href="#">No comments</a></li> -->
                                                         </ul>
                                             </div>
-                                            <div class="blog-img"> <img src="<?php echo Yii::$app->urlManager->getBaseUrl() . '/uploads/blog/' .$b->image_url;?>" /> </div>
+                                            <div class="blog-img"> <img width="150px" height="150px" src="<?php echo Yii::$app->urlManager->getBaseUrl() . '/uploads/blog/' .$b->image_url;?>" /> </div>
                                         </div>
                                         <?php endforeach;?>
                                 </div>
@@ -297,11 +302,9 @@ use yii\bootstrap\ActiveForm;
                                 <h3><?php echo $pp->cms_name ?></h3>
                             </div>
                             <div class="privacy-policy-main">
-                                <div class="wrapper-2">
                                     <div class="privacy-policy-list">
                                        <?php echo $pp->cms_content; ?>                              
                                     </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -311,11 +314,9 @@ use yii\bootstrap\ActiveForm;
                                 <h3><?php echo $tc->cms_name ?></h3>
                             </div>
                             <div class="terms-condition-main">
-                                <div class="wrapper-2">
                                     <div class="terms-condition-list">
                                                 <?php echo $tc->cms_content; ?>                             
                                     </div>
-                                </div>
                             </div>
                         </div>
                     </div>

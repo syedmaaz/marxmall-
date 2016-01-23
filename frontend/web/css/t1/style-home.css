@@ -561,6 +561,7 @@ section {
 .testimonials-b {
     width: 85%;
     float: left;
+	color: white;
 }
 
 .testimonials p {
@@ -713,8 +714,14 @@ section {
 }
 
 .privacy-policy-main {
+	color: #fff;
     float: left;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    padding: 20px;
     width: 100%;
+    word-spacing: 0;
 }
 
 .privacy-policy h3 {
@@ -760,6 +767,12 @@ section {
 .terms-condition-main {
     float: left;
     width: 100%;
+	color: #fff;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    padding: 20px;
+    word-spacing: 0;
 }
 
 .terms-condition h3 {
@@ -1135,6 +1148,9 @@ input[type="submit"]:hover {
         transform: none;
     }
 }
-
+.span2 > img {
+    height: 100px;
+    width: 140px;
+}
 
 /*animations*/
