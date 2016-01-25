@@ -108,8 +108,11 @@ use yii\bootstrap\ActiveForm;
                     <div id="garments" class="tab-content">
                         <div class="garments" id="garments-slide">
                             <div class="garments-tp-bar">
-                                <a class="navigat-btn" style= "color: white;padding: 25px;text-decoration: none;" href="#shop-catogories">Back</a>
+                               <div> <a class="navigat-btn" style="background-color: #880606;border-color: #880606;color: #fff;float: left;font-weight: bold;margin: 20px 37px;text-decoration:none;padding: 6px 10px;text-align: center;"   href="#shop-catogories">Back</a>
+							   </div>
+							   <div style=" margin: 0 42px;width: 12%;">
 								<h3>GARMENTS</h3>								
+								</div>
                             </div>
                             <div class="garments-catog">
                                 <ul class="garments-list group">
