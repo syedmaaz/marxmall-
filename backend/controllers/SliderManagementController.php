@@ -97,18 +97,17 @@ class SliderManagementController extends Controller
         if ($model->load(Yii::$app->request->post()) ) {
 
             
-            $file = UploadedFile::getInstances($model, 'file');
-            $model->file = $file[0];
+            $file = UploadedFile::getInstances($model, 'image');
+            $model->image = $file[0];
 
-            if($model->validate()) {
-                if(!empty($model->file)) {
-                    $image_name = '/sliders/' . $model->file->baseName . '_' . time() . '.' . $model->file->extension;
+    			   if(sizeof($file) > 0){
+                    $image_name = '/sliders/' . $model->image->baseName . '_' . time() . '.' . $model->image->extension;
                     $image_path = Yii::getAlias('@frontend') . '/web/uploads' . $image_name  ;
-                    $model->file->saveAs($image_path);
+                    $model->image->saveAs($image_path);
 
                     $model->image = $image_name;
                     $model->save();
-                }
+					
             }
 
             return $this->redirect(['view', 'id' => $model->id]);
