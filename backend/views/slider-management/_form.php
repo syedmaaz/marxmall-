@@ -12,7 +12,7 @@ use kartik\file\FileInput;
 
 <div class="slider-form">
 
-    <?php $form = ActiveForm::begin(); ?>
+    <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]) ; ?>
 
     <?= $form->field($model, 'id')->textInput() ?>
 
@@ -20,7 +20,7 @@ use kartik\file\FileInput;
         FileInput::widget([
             //'name' => 'images[]',
             'model' => $model,
-            'attribute' => 'file',
+            'attribute' => 'image',
             'options'=>[
                 'multiple'=>true
             ],

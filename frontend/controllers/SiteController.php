@@ -9,6 +9,7 @@ use common\models\Store;
 use common\models\UserStore;
 use common\models\CMS;
 use common\models\BLOG;
+use common\models\slider;
 use common\models\TESTIMONIALS;
 use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
@@ -78,13 +79,13 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
-        $cat = Category::find()->all();
-        $blogs = BLOG::find()->all();
-        $store = Store::find()->all();
-        $userModel = new SignupForm();
+        $sliders    = slider::find()->all();
+     	$cat        = Category::find()->all();
+        $blogs      = BLOG::find()->all();
+        $store      = Store::find()->all();
+        $userModel  = new SignupForm();
         $storeModel = new Store();
 
-        
         $about_us = CMS::find()->where("cms_name = 'ABOUT US'")->one();         
         $contact_us = CMS::find()->where("cms_name = 'CONTACT US'")->one();         
         $pp = CMS::find()->where("cms_name = 'PRIVACY POLICY'")->one();         
@@ -104,6 +105,8 @@ class SiteController extends Controller
             'pp' => $pp,
             'tc' => $tc,
             'blogs' => $blogs,
+			'sliders' => $sliders,
+
         ]);
     }
 

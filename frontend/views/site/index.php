@@ -69,29 +69,13 @@ use yii\bootstrap\ActiveForm;
                         <div class="slider-wrapper">
                             <div id="slider">
                                 <div class="slide1">
-                                    <div class="banner-1"> <img src="images/t1/banner-1.png" /> </div>
-                                    <div class="banner-2"> <img src="images/t1/banner-2.png" /> </div>
-                                    <div class="banner-3"> <img src="images/t1/banner-3.png" /> </div>
-                                    <div class="banner-4"> <img src="images/t1/banner-4.png" /> </div>
-                                </div>
-                                <div class="slide2">
-                                    <div class="banner-1"> <img src="images/t1/banner-1.png" /> </div>
-                                    <div class="banner-2"> <img src="images/t1/banner-2-2.png" /> </div>
-                                    <div class="banner-3"> <img src="images/t1/banner-6.jpg" /> </div>
-                                    <div class="banner-4"> <img src="images/t1/banner-7.jpg" /> </div>
-                                </div>
-                                <div class="slide3">
-                                    <div class="banner-1"> <img src="images/t1/banner-1.png" /> </div>
-                                    <div class="banner-2"> <img src="images/t1/banner-2.png" /> </div>
-                                    <div class="banner-3"> <img src="images/t1/banner-3.png" /> </div>
-                                    <div class="banner-4"> <img src="images/t1/banner-4.png" /> </div>
-                                </div>
-                                <div class="slide4">
-                                    <div class="banner-1"> <img src="images/t1/banner-1.png" /> </div>
-                                    <div class="banner-2"> <img src="images/t1/banner-2.png" /> </div>
-                                    <div class="banner-3"> <img src="images/t1/banner-3.png" /> </div>
-                                    <div class="banner-4"> <img src="images/t1/banner-4.png" /> </div>
-                                </div>
+<?php
+ $k = 1;
+ foreach($sliders as $sid){ ?>
+                                    <div class="banner-<?php echo $k;?>"> <img src="<?= Yii::$app->urlManager->getBaseUrl() . '/uploads/' .  $sid->image ?>" /> </div>                                    
+
+<?php $k++;}?>								
+                                </div>                                
                             </div>
                             <div id="slider-direction-nav"></div>
                             <div id="slider-control-nav"></div>
@@ -236,12 +220,10 @@ use yii\bootstrap\ActiveForm;
                     <div id="about-us" class="tab-content">
                         <div class="about-us">
                             <div class="about-tp-bar">
-                                <h3>ABOUT US</h3>
+                                <h3><?php echo $about_us->cms_name;?></h3>
                             </div>
                             <div class="about-us-main">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <?php echo $about_us->cms_content;?>
                             </div>
                         </div>
                     </div>
